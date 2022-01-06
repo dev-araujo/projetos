@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/styles/main.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="imagex/png" href="./assets/images/iconabout.ico">
+
+    <title>Araujo</title>
+
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Adriano</a>
+                <span id="iconTheme" onclick='changeTheme()'>
+                    <i class='bx bx-sun'></i>
+                </span>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Habilidades</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">Projetos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">
+                    Olá,<br />Sou <span class="home__title-color">Adriano</span><br />
+                    Dev. <u class="home__underline-color">Front-end</u>
+                </h1>
+
+                <a href="#contact" id="button-contact" class="button">Contato</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/araujocode/" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-linkedin"></i></a>
+                <a href="https://codepen.io/araujo6_6" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-codepen"></i></a>
+                <a href="https://github.com/Pereira-Araujo" target="_blank" class="home__social-icon"><i
+                        class="bx bxl-github"></i></a>
+            </div>
+
+            <div class="home__img">
+                <img class="home__img--border" src="assets/images/perfil.png" alt="foto de perfil" />
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">Sobre</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/images/about2.png" alt="" />
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Meu nome é Adriano</h2>
+                    <p class="about__text">
+                        Olá, meu nome é Adriano e sou desenvolvedor <u class="about__spotlight">Front-End</u>, manjo de
+                        <strong>HTML</strong>, <strong>CSS</strong>,<strong>JS</strong>, e <strong>React</strong>,
+                        também
+                        tenho experiência com <strong>Angular 12</strong>, <strong>SASS</strong>,
+                        <strong>Bootstrap</strong>, com o uso <strong>Metodologia Ágil (Scrum)</strong> e
+                        plataformas de versionamento de código : <strong>GitHub</strong> e <strong>BitBucket</strong>.
+                    </p>
+                    <p class="about__text">
+                        Entre 2020 e 2021 fiz parte da <a
+                            href='https://www.facebook.com/388131481831991/photos/a.388493111795828/666560603989076/?type=3'
+                            target="_blank">
+                            <u class="about__spotlight">segunda turma noturna</u></a> da
+                        <a href='https://www.labenu.com.br/' target="_blank">
+                            <u class="about__spotlight">Labenu</u></a>, um bootcamp
+                        de mais de <strong>500 horas</strong>(divididas em 6 meses), unindo teoria e prática voltadas
+                        para a área de Desenvolvimento
+                        <u class="about__spotlight">Front-end</u>
+                    </p>
+                    <p class="about__text">
+                        Atualmente faço parte do time de desenvolvimento da
+                        <a href="https://www.linkedin.com/company/paytimebr/mycompany/" target="_blank"><u
+                                class="about__spotlight">Paytime</u></a>
+                    </p>
+                    <a href="./assets/curriculo/curriculo_2.pdf" download="Araujo_dev" class="button">Currículo</a>
+
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Habilidades</h2>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__blocks">
+                    <p class="skills__text">
+                        Seguem algumas hard skills que domino e tenho utilizado.
+                        Também tenho estudado <strong>Node.Js</strong> e <strong>C++</strong>,
+                        entre outras <i>coisitas</i> mais;
+                        para saber mais sobre o que venho estudando,
+                        você pode <a href="https://github.com/Pereira-Araujo/Estudos" target="_blank"><u
+                                class="skills__spotlight">descobrir aqui</u></a>
+                    </p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-html5 skills__icon"></i>
+                            <span class="skills__name">HTML5</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-css3 skills__icon"></i>
+                            <span class="skills__name">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-javascript skills__icon"></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-react skills__icon"></i>
+                            <span class="skills__name">REACT</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bx bxl-git skills__icon"></i>
+                            <span class="skills__name">GIT</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">AXIOS</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">STYLED-COMPONENTS</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">MATERIAL-UI</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">REACT-ROUTER-DOM</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <span class="skills__name">CONTEXT-API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/images/work3.jpg" alt="" class="skills__img" />
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title"> Projetos</h2>
+            <div class="section work-text">Alguns projetos podem ser conferidos abaixo</div>
+
+            <div class="work__container bd-grid">
+
+                <!-- PROJECTS HERE, SEE MAIN.JS -->
+
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contato</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="https://getform.io/f/8cf51d2b-07e5-49a8-b721-58d0422893c0" method="POST"
+                    class="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input" required />
+                    <input type="email" name="email" placeholder="Email" class="contact__input" required />
+                    <textarea type="text" name="message" id="" cols="0" rows="10" class="contact__input"
+                        required></textarea>
+                    <button class="contact__button button" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Adriano P. de Araujo</p>
+        <div class="footer__social" id="contact">
+            <a href="https://www.linkedin.com/in/araujocode/" target="_blank" class="footer__icon"><i
+                    class="bx bxl-linkedin"></i></a>
+            <a href="https://codepen.io/araujo6_6" target="_blank" class="footer__icon"><i
+                    class="bx bxl-codepen"></i></a>
+            <a href="https://github.com/Pereira-Araujo" target="_blank" class="footer__icon"><i
+                    class="bx bxl-github"></i></a>
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

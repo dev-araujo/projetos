@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Astromach",
+    "url": "https://github.com/Pereira-Araujo/Projetos/tree/main/ano_1/Projetos_React/AstroMach",
+    "image": "https://64.media.tumblr.com/688a7feac886ec209ba965902be1e06c/d772ea2b06a5573b-79/s500x750/4ebfe168e04399cbd5bd0e6fab97c971977515c7.png"
+  },
+  {
+    "id": 2,
+    "name": "Chuck-Jokes",
+    "url": "https://github.com/Pereira-Araujo/Projetos/tree/main/ano_1/Projetos_React/Chuck_Jokes",
+    "image": "https://64.media.tumblr.com/77763fa48d44e97efead85c968c4ca00/ff569732a12b0438-28/s540x810/9b2c2152fa07cf1fe789a3a389984afdebbc8561.png"
+  },
+  {
+    "id": 6,
+    "name": "BRLOGIC",
+    "url": "https://github.com/Pereira-Araujo/desafios/tree/main/testes_tecnicos/desafio_brlogic",
+    "image": "https://64.media.tumblr.com/a6eb8f89ab442c2b1dcb3f1e2f65495d/b0bb00e4ca7eed04-9b/s640x960/9dfbfacf21e543ca11e021731a280d4d605b0c4b.png"
+  },
+  {
+    "id": 7,
+    "name": "SenseData",
+    "url": "https://github.com/Pereira-Araujo/challenge_senseData",
+    "image": "https://64.media.tumblr.com/636b78f694f064a771707f2cdf7ab19b/946dfabf4b6547b4-a0/s2048x3072/5b4f36389ff6ada7c7a21f1012de1970256bf750.png"
+  }
+]
