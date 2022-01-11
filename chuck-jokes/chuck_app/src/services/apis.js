@@ -4,7 +4,7 @@ const BASE_URL = "https://api.chucknorris.io/jokes/";
 
 export const api_getRandomJokes = (set) => {
   axios
-    .get(`${BASE_URL}/random`)
+    .get(`${BASE_URL}random`)
     .then((response) => {
       set(response.data.value);
     })
@@ -16,7 +16,7 @@ export const api_getRandomJokes = (set) => {
 export const api_getCategories = (set) => {
   // used in GlobalState
   axios
-    .get(`${BASE_URL}/categories`)
+    .get(`${BASE_URL}categories`)
     .then((response) => {
       set(response.data);
     })
@@ -28,7 +28,7 @@ export const api_getCategories = (set) => {
 export const api_getJokesPerCategories = (set, state) => {
   //used in  JokesOptions
   axios
-    .get(`${BASE_URL}/random?category=${state}`)
+    .get(`${BASE_URL}random?category=${state}`)
     .then((response) => {
       set(response.data.value);
     })
@@ -37,11 +37,11 @@ export const api_getJokesPerCategories = (set, state) => {
     });
 };
 
-export const api_getSearchJokes = (set, searchedText) => {
-  axios
-    .get(`${BASE_URL}/search?query=${searchedText}`)
+export const api_getSearchJokes = (setList, text) => {
+  return axios
+    .get(`${BASE_URL}search?query=${text}`)
     .then((response) => {
-      set(response.data.result.slice(0, 7));
+      setList(response.data.result.slice(0, 7));
     })
     .catch((error) => {
       console.log(error);
