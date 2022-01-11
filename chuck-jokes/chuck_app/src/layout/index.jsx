@@ -15,7 +15,7 @@ function Layout() {
         <JokesSearch />
         <JokesOptions />
       </S.OptionsSide>
-        <JokesContent />
+      <JokesContent />
     </S.Container>
   );
 }
