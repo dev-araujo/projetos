@@ -8,6 +8,8 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+
 `;
 export const Options = styled.section`
   width: 20rem;

@@ -8,11 +8,11 @@ function JokesContent() {
   const [isVisible, setIsVisible] = useState("visible");
 
   const jokeSearchedList = jokesList.map((joke) => {
-    return <S.List>* {joke.value}</S.List>;
+    return <S.List key={joke.value}>* {joke.value}</S.List>;
   });
 
   const isVisibleOrNot = () => {
-    if (search.length > 0 || jokeSearchedList.length > 0 || jokes.length > 0) {
+    if (search.length > 0 || jokesList.length > 0 || jokes.length > 0) {
       setIsVisible("invisible");
     } else {
       setIsVisible("visible");
@@ -21,7 +21,7 @@ function JokesContent() {
 
   useEffect(() => {
     isVisibleOrNot();
-  }, []);
+  }, [ jokes, jokesList, search]);
 
   return (
     <S.Container>

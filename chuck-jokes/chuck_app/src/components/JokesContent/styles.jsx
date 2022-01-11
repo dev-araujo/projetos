@@ -12,16 +12,28 @@ export const Container = styled.section`
   align-items: center;
 
   img {
-    width: 50%;
+    width: 20rem;
     background: #ffefd2;
   }
-
-  .visible{
-      display:auto;
+  .visible {
+    display: auto;
   }
 
-  .invisible{
-      display:none;
+  .invisible {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    padding: 1rem;
+    width: 30rem;
+    overflow: auto;
+  }
+
+  @media (max-width: 490px) {
+    border-radius: 0;
+    width: 91%;
+    
+    
   }
 `;
 
