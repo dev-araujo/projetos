@@ -53,7 +53,7 @@ npm install
 Execute a aplicação:
 ```
 npm run start 
-
+```
 ----
 
 ### Author 👷
