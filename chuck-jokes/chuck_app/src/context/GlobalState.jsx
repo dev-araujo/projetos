@@ -1,17 +1,21 @@
 import { useState, useEffect } from "react";
 import GlobalStateContext from "./GlobalStateContext";
-import { getRandomJokes } from "../services/apis";
+import { api_getCategories, api_getRandomJokes } from "../services/apis";
 
 const GlobalState = (props) => {
-  const [jokes, setJokes] = useState({});
+  const [jokes, setJokes] = useState('');
+  const [search,setSearch] = useState('')
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    getRandomJokes(setJokes);
-  }, [setJokes]);
+    api_getCategories(setCategories);
+  }, []);
 
   const data = {
     jokes,
     setJokes,
+    categories,
+    search,setSearch,
   };
   return (
     <GlobalStateContext.Provider value={data}>
