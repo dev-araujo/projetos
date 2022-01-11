@@ -4,23 +4,24 @@ import { api_getSearchJokes } from "../../services/apis";
 import * as S from "./styles";
 
 function JokesSearch() {
-  const { jokes, setJokes, setSearch, search } = useContext(GlobalStateContext);
+  const { jokesList, setJokesList, setJokes, setSearch, search } =
+    useContext(GlobalStateContext);
 
-  const searching = (event) => {
-    event.preventDefault();
-    api_getSearchJokes(setJokes, search);
-    setSearch("");
+  const searching = (e) => {
+    e.preventDefault();
+    api_getSearchJokes(setJokesList, search);
   };
-  console.log(jokes);
+
+  console.log(jokesList);
   return (
-    <form onSubmit={searching}>
+    <form>
       <S.SearchBar
         type={"search"}
-        placeholder={"searching jokes"}
+        placeholder={"searching jokes,press ENTER or go"}
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <S.ButtonSearch type={"submit"}>Go</S.ButtonSearch>
+      <S.ButtonSearch onClick={searching}>Go</S.ButtonSearch>
     </form>
   );
 }

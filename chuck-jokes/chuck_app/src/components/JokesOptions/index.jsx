@@ -5,7 +5,7 @@ import { api_getJokesPerCategories } from "../../services/apis";
 import * as S from "./styles";
 
 function JokesOptions() {
-  const { setJokes, categories } = useContext(GlobalStateContext);
+  const { setJokes, categories, setSearch } = useContext(GlobalStateContext);
 
   return (
     <S.Container>
@@ -14,7 +14,10 @@ function JokesOptions() {
           <S.Button
             key={option}
             value={option}
-            onClick={() => api_getJokesPerCategories(setJokes, option)}
+            onClick={() => {
+              api_getJokesPerCategories(setJokes, option);
+              setSearch("");
+            }}
           >
             {option}
           </S.Button>
