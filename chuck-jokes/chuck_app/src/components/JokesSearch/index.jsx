@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import GlobalStateContext from "../../context/GlobalStateContext";
-import { api_getSearchJokes } from "../../services/apis";
+import { api_getSearchJokes } from "../../services/api";
 import * as S from "./styles";
 
 function JokesSearch() {
@@ -12,7 +12,6 @@ function JokesSearch() {
     api_getSearchJokes(setJokesList, search);
   };
 
-  console.log(jokesList);
   return (
     <form>
       <S.SearchBar

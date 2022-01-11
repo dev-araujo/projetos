@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import GlobalStateContext from "./GlobalStateContext";
-import { api_getCategories, api_getRandomJokes } from "../services/apis";
+import { api_getCategories } from "../services/api";
 
 const GlobalState = (props) => {
-  const [jokes, setJokes] = useState("");
-  const [jokesList,setJokesList] = useState([])
+  const [jokes, setJokes] = useState([]);
+  const [jokesList, setJokesList] = useState([]);
   const [search, setSearch] = useState("");
   const [categories, setCategories] = useState([]);
 
@@ -18,7 +18,8 @@ const GlobalState = (props) => {
     categories,
     search,
     setSearch,
-    jokesList,setJokesList
+    jokesList,
+    setJokesList,
   };
   return (
     <GlobalStateContext.Provider value={data}>

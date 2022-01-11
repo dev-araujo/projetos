@@ -6,6 +6,13 @@ export const Container = styled.section`
   width: 20rem;
   height: 14rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+export const Options = styled.section`
+  width: 20rem;
+  height: 14rem;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 `;
@@ -21,5 +28,20 @@ export const Button = styled.p`
   margin: 1px;
   :hover {
     ${hoverDefault}
+  }
+`;
+
+export const RandomButton = styled.p`
+  ${hoverDefault}
+
+  cursor:pointer;
+  padding: 1rem;
+  border-radius: 2px;
+  text-align: center;
+
+  :hover {
+    ${colorsDefault}
+
+    border: #cacaca 1px solid;
   }
 `;
