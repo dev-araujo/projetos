@@ -14,6 +14,10 @@ export const Container = styled.section`
   img {
     width: 20rem;
     background: #ffefd2;
+
+    @media (max-width: 490px) {
+      width: 10rem;
+    }
   }
   .visible {
     display: auto;
@@ -32,8 +36,6 @@ export const Container = styled.section`
   @media (max-width: 490px) {
     border-radius: 0;
     width: 91%;
-    
-    
   }
 `;
 

@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import {colorsDefault,hoverDefault} from '../../styles/variables'
-
+import { colorsDefault, hoverDefault } from "../../styles/variables";
 
 export const SearchBar = styled.input`
   ${colorsDefault}
 
   width: 17rem;
-  height: 2.5rem;
+  height: 38px;
+  max-height: 38px;
   border-right: none;
   border-top: solid 1px #cacaca;
   border-bottom: solid 1px #cacaca;
@@ -29,7 +29,8 @@ export const ButtonSearch = styled.button`
   ${colorsDefault}
 
   width: 3rem;
-  height: 37.5px;
+  height: 38px;
+  max-height: 38px;
   border-right: solid 1px #cacaca;
   border-top: solid 1px #cacaca;
   border-bottom: solid 1px #cacaca;

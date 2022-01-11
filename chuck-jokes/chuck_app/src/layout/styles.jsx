@@ -26,6 +26,7 @@ export const OptionsSide = styled.section`
   }
   @media (max-width: 766px) {
     width: auto;
+    max-height:50%;
     padding: 0;
     margin: 0;
     display: block;
