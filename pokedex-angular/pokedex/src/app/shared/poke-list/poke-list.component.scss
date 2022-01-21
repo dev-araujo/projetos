@@ -4,6 +4,9 @@
   display: flex;
   justify-content: space-between;
 
+  width: 100%;
+  padding:rem-calc(20) 0;
+
   .pokemon {
     display: flex;
 
@@ -52,7 +55,7 @@
       background: url("../../../assets/poke-back.svg");
 
       img {
-        width: rem-calc(80);
+        width: rem-calc(60);
       }
     }
   }
