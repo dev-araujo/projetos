@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@use "./scss/reset.scss";
-@use "./scss/variables.scss";
-@use "./scss/rem-calc.scss";
+@import "./scss/reset.scss";
+@import "./scss/variables.scss";
+@import "./scss/rem-calc.scss";
 
 html {
   font-family: Roboto, sans-serif;
