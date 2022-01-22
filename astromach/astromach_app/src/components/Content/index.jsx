@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import Context from "../../global/Context";
 
-import Box from "@mui/material/Box";
 import CircularProgress from "@mui/material/CircularProgress";
 
 import * as S from "./styles";
