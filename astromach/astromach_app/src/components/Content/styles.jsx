@@ -6,7 +6,7 @@ export const Container = styled.main`
   align-items: center;
   justify-content: flex-start;
   img {
-    height: 26rem;
+    height: 24rem;
     width: 18rem;
 
     @media (max-width: 380px) {
