@@ -26,3 +26,11 @@ export const Information = styled.section`
     font-size: 1.2rem;
   }
 `;
+export const Loading = styled.section`
+  width: 18rem;
+  height:26rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
