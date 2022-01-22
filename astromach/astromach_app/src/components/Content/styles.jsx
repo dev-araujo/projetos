@@ -6,7 +6,7 @@ export const Container = styled.main`
   align-items: center;
   justify-content: flex-start;
   img {
-    height: 26rem;
+    height: 24rem;
     width: 18rem;
 
     @media (max-width: 380px) {
@@ -25,4 +25,12 @@ export const Information = styled.section`
   h1 {
     font-size: 1.2rem;
   }
+`;
+export const Loading = styled.section`
+  width: 18rem;
+  height:26rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
