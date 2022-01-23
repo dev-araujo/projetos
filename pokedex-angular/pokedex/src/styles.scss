@@ -3,6 +3,8 @@
 @import "./scss/reset.scss";
 @import "./scss/variables.scss";
 @import "./scss/rem-calc.scss";
+@import "./scss/btn.scss";
+@import "./scss/pokemon-colors-type.scss";
 
 html {
   font-family: Roboto, sans-serif;
@@ -25,61 +27,4 @@ main {
   max-width: rem-calc(600);
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-// colors pokemons type
-.grass {
-  background: var(--grass);
-}
-.poison {
-  background: var(--poison);
-}
-.fire {
-  background: var(--fire);
-}
-.fighting {
-  background: var(--fighting);
-}
-.flying {
-  background: var(--flying);
-}
-.ground {
-  background: var(--ground);
-}
-.rock {
-  background: var(--rock);
-}
-.bug {
-  background: var(--bug);
-}
-.ghost {
-  background: var(--ghost);
-}
-.steel {
-  background: var(--steel);
-}
-.water {
-  background: var(--water);
-}
-.electric {
-  background: var(--electric);
-}
-.psychic {
-  background: var(--psychic);
-}
-.ice {
-  background: var(--ice);
-}
-.dragon {
-  background: var(--dragon);
-}
-.dark {
-  background: var(--dark);
-  color: var(--white);
-}
-.fairy {
-  background: var(--fairy);
-}
-.normal {
-  background: var(--normal);
 }
