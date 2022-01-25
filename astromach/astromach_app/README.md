@@ -32,7 +32,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd astromach_app
+cd astromach/astromach_app
 ```
 
 Instale as dependências:
