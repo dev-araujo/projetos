@@ -22,14 +22,13 @@ export class PokeListComponent implements OnInit {
       res => {
         this.setAllPokemons = res.results
         this.getAllPokemons = this.setAllPokemons
-        console.log(res.results)
       }
     )
   }
 
   public getSearch(value: string) {
     const filter = this.setAllPokemons.filter((res: any) => {
-      return !res.name.indexOf(value.toLowerCase())
+      return res.name.toLowerCase().includes(value.toLocaleLowerCase())
     })
 
     this.getAllPokemons = filter
