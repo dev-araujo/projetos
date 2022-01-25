@@ -1,0 +1,36 @@
+<main>
+
+  <section class="pokemon__names">
+    <h1 class="slideInLeft">{{pokemon?.name}}</h1>
+    <h2 class="slideInRight">{{pokemon?.name}}</h2>
+  </section>
+
+  <section class="pokemon__status">
+    <img [src]="pokemon?.sprites.other.dream_world.front_default" [alt]="pokemon?.name" class="slideInDown">
+
+    <article class="pokemon__status__statistics fadeIn">
+      <section>
+        <h3>Estatísticas</h3>
+
+        <ol>
+          <li *ngFor="let value of pokemon?.stats">
+            <p>{{ value?.stat.name }}</p>
+
+            <strong>
+              {{ value?.base_stat }}
+              <progress class="pokemon__status__progressbar" value="{{value.base_stat}}" max='100'>
+              </progress>
+            </strong>
+
+          </li>
+        </ol>
+      </section>
+
+      <a [routerLink]="['']" class="btn btn__secondary">
+        Voltar
+      </a>
+    </article>
+  </section>
+
+
+</main>
