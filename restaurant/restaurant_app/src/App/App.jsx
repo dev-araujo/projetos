@@ -8,7 +8,7 @@ import {
   Intro,
   Laurels,
   Menu,
-} from "../layout";
+} from "../container";
 import { Navbar } from "../components";
 
 function App() {
