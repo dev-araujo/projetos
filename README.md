@@ -15,8 +15,9 @@ O intuito desse repositório é reunir em um só lugar meus pequenos **projetos*
 
 **<details><summary>Projetos React ⚛️</summary>**
 
- - [**Chuck jokes app**](https://github.com/dev-araujo/projetos/tree/main/chuck-jokes/chuck_app) 
- - [**Astromach app**](https://github.com/dev-araujo/projetos/tree/main/astromach/astromach_app)
+ - [**Chuck jokes app**](https://github.com/dev-araujo/projetos/tree/main/chuck-jokes) 
+ - [**Astromach app**](https://github.com/dev-araujo/projetos/tree/main/astromach)
+  
  
 
 </details>
