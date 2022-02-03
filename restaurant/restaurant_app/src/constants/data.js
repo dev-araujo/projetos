@@ -75,7 +75,7 @@ const awards = [
   {
     imgUrl: images.award03,
     title: "Outstanding Chef",
-    subtitle: "Lorem ipsum dolor sit amet, consectetur.",
+    subtitle: "Lorem ipsum dolor sit amet, consectetur",
   },
 ];
 
