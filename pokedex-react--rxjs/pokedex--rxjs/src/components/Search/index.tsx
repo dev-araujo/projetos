@@ -2,9 +2,12 @@ import { useMemo } from "react";
 import { useObservableState } from "observable-hooks";
 import { BehaviorSubject, combineLatestWith, map } from "rxjs";
 import { usePokemon } from "../../store/store";
+import SearchIcon from '../../assets/search.svg'
 
 import Pokeball from "../../assets/pokeball.png";
 import PokeballShape from "../../assets/pokeball_shape.jpg";
+
+import "./styles.scss"
 
 function Search() {
   const { pokemon$, captured$ } = usePokemon();
@@ -26,17 +29,20 @@ function Search() {
 
   return (
     <form>
-      <input
-        type="search"
-        value={search$.value}
-        onChange={(e) => search$.next(e.target.value)}
-      />
-
-      <section>
+      <section className="poke-search">
+        <input
+          className="poke-search__input"
+          type="search"
+          value={search$.value}
+          onChange={(e) => search$.next(e.target.value)}
+        />
+        <img src={SearchIcon} alt="lupa" />
+      </section>
+      <section className="poke-search__list">
         {filterPokemon.map((p) => {
           return (
             <div key={p.name}>
-              <img
+              {/* <img
                 onClick={() => {
                   if (captured$.value.includes(p.id)) {
                     captured$.next(captured$.value.filter((id) => id !== p.id));
@@ -47,8 +53,12 @@ function Search() {
                 className={"pokeball"}
                 src={captured$.value.includes(p.id) ? Pokeball : PokeballShape}
                 alt={"pokeball"}
-              />
+              /> */}
               <strong>{p.name}</strong>
+              <img
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${p.id}.png`}
+                alt={p.name}
+              />
             </div>
           );
         })}

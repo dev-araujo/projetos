@@ -1,0 +1,28 @@
+.poke-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+
+  &__input {
+    width: 95%;
+    background: none;
+    border: none;
+
+    font-size: 18px;
+    color: var(--white);
+
+    &::placeholder {
+      color: var(--white);
+    }
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
