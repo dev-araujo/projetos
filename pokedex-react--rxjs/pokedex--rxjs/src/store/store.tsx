@@ -49,7 +49,7 @@ export const deck$ = pokemon$.pipe(
   map((pokemon) => pokemon.filter((p) => p.captured))
 );
 
-fetch("/pokemon-simplified.json")
+fetch("data/pokemon-simplified.json")
   .then((res) => res.json())
   .then((data) => rawPokemon$.next(data.splice(0, 150)));
 
