@@ -1,4 +1,5 @@
 import { usePokemon } from "../../store/store";
+import { pokeImage } from "../../constant/url";
 import Pokeball from "../../assets/pokeball.png";
 import "./styles.scss";
 
@@ -19,16 +20,14 @@ function Card({ pokeName, pokeId }: PokeProps) {
             : "poke-card__no-captured"
         }
         onClick={() => {
-          if (captured$.value.includes(pokeId)) {
-            captured$.next(captured$.value.filter((id) => id !== pokeId));
-          } else {
-            captured$.next([...captured$.value, pokeId]);
-          }
+          captured$.value.includes(pokeId)
+            ? captured$.next(captured$.value.filter((id) => id !== pokeId))
+            : captured$.next([...captured$.value, pokeId]);
         }}
         src={
           captured$.value.includes(pokeId)
             ? Pokeball
-            : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeId}.png`
+            : `${pokeImage}${pokeId}.png`
         }
         alt={pokeName}
       />
