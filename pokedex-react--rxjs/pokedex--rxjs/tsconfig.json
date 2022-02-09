@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/@types/types.d.ts"  ]
 }
