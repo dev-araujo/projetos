@@ -3,11 +3,6 @@ import { pokeImage } from "../../constant/url";
 import Pokeball from "../../assets/pokeball.png";
 import "./styles.scss";
 
-interface PokeProps {
-  pokeName: string;
-  pokeId: number;
-}
-
 function Card({ pokeName, pokeId }: PokeProps) {
   const { captured$ } = usePokemon();
 

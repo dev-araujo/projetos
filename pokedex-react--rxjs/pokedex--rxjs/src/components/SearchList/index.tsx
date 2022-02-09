@@ -2,18 +2,17 @@ import { useMemo } from "react";
 import { useObservableState } from "observable-hooks";
 import { BehaviorSubject, combineLatestWith, map } from "rxjs";
 import { usePokemon } from "../../store/store";
-import { Card } from "../../components";
+import { Card } from "..";
 import SearchIcon from "../../assets/search.svg";
 
 import "./styles.scss";
 
-function Search() {
+function SearchList() {
   const { pokemon$ } = usePokemon();
   const search$ = useMemo(() => new BehaviorSubject(""), []);
   const pokemon = useObservableState(pokemon$, []);
 
-  const [filterPokemon] = useObservableState(
-    () =>
+  const [filterPokemon] = useObservableState(() =>
       pokemon$.pipe(
         combineLatestWith(search$),
         map(([pokemon, search]) =>
@@ -49,4 +48,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchList;
