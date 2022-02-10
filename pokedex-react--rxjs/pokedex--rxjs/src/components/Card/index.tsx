@@ -3,7 +3,7 @@ import { pokeImage } from "../../constant/url";
 import Pokeball from "../../assets/pokeball.png";
 import "./styles.scss";
 
-function Card({ pokeName, pokeId }: PokeProps) {
+function Card({ pokeName, pokeId,pokeDetailGo }: PokeProps) {
   const { captured$ } = usePokemon();
 
   return (
@@ -26,7 +26,8 @@ function Card({ pokeName, pokeId }: PokeProps) {
         }
         alt={pokeName}
       />
-      <strong>detalhes</strong> <strong>{pokeName}</strong>
+      <strong onClick={pokeDetailGo}>detalhes</strong>{" "}
+      <strong>{pokeName}</strong>
     </section>
   );
 }

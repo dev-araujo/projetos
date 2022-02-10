@@ -1,6 +1,8 @@
 import { useMemo } from "react";
 import { useObservableState } from "observable-hooks";
 import { BehaviorSubject, combineLatestWith, map } from "rxjs";
+import { useNavigate } from "react-router";
+import { goToPokemonDetails } from "../../routes/Coordinator";
 import { usePokemon } from "../../store/store";
 import { Card } from "..";
 import SearchIcon from "../../assets/search.svg";
@@ -8,6 +10,7 @@ import SearchIcon from "../../assets/search.svg";
 import "./styles.scss";
 
 function SearchList() {
+  let navigate =useNavigate()
   const { pokemon$ } = usePokemon();
   const search$ = useMemo(() => new BehaviorSubject(""), []);
   const pokemon = useObservableState(pokemon$, []);
@@ -39,7 +42,7 @@ function SearchList() {
         {filterPokemon
           .map((p) => (
             <div key={p.name}>
-              <Card pokeName={p.name} pokeId={p.id} />
+              <Card pokeName={p.name} pokeId={p.id} pokeDetailGo={()=>goToPokemonDetails(navigate,p.id)} />
             </div>
           ))
           .slice(0, 16)}
