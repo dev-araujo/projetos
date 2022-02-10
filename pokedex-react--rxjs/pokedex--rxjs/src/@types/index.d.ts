@@ -1,4 +1,4 @@
- interface Pokemon {
+interface Pokemon {
   id: number;
   name: string;
   type: string[];
@@ -12,15 +12,15 @@
   captured?: boolean;
 }
 
-
 interface PokeProps {
   pokeName: string;
   pokeId: number;
+  pokeDetailGo: any;
 }
 
-interface ModalProps{
-  open:any
-  close:any
+interface ModalProps {
+  open: any;
+  close: any;
 }
 
 type Anchor = "right";
