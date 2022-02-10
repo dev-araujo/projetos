@@ -7,18 +7,24 @@
   },
   {
     "id": 2,
+    "name": "Pokedex-angular",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/pokedex-angular",
+    "image": "https://user-images.githubusercontent.com/97068163/151001628-9465160c-01e8-4a34-88b0-8a5000156a1f.png"
+  },
+  {
+    "id": 3,
     "name": "Chuck-Jokes",
     "url": "https://github.com/dev-araujo/projetos/tree/main/chuck-jokes/chuck_app",
     "image": "https://user-images.githubusercontent.com/97068163/149026115-487b8728-abc3-42e0-90fe-507c68348cd6.png"
   },
   {
-    "id": 6,
+    "id":4,
     "name": "BRLOGIC",
     "url": "https://github.com/dev-araujo/desafios/blob/main/brlogic/README.md",
     "image": "https://user-images.githubusercontent.com/97068163/149625085-1fc6c49c-c14b-45ac-aebf-eb3e71699d75.png"
   },
   {
-    "id": 7,
+    "id": 5,
     "name": "Ws-work",
     "url": "https://github.com/dev-araujo/desafios/tree/main/ws-work",
     "image": "https://user-images.githubusercontent.com/97068163/149378575-4c46f6e1-1bfa-4791-b2c4-79d9f4b36d31.png"
