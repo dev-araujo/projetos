@@ -1,16 +1,7 @@
-import { useParams } from "react-router-dom";
+import Info from "../../container/Info";
 
 function Details() {
-  const { id } = useParams();
-  console.log(id)
-  return (
-    <div>
-      <img
-        src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
-        alt={'po'}
-      />
-    </div>
-  );
+  return <Info />;
 }
 
 export default Details;

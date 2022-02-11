@@ -18,9 +18,17 @@ interface PokeProps {
   pokeDetailGo: any;
 }
 
+
 interface ModalProps {
   open: any;
   close: any;
 }
 
+interface SearchProps {
+  searchValue: any;
+  onChangeCall: any;
+}
+
 type Anchor = "right";
+
+
