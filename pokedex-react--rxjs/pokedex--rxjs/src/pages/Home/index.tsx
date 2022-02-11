@@ -1,21 +1,19 @@
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import { toggleDrawer } from "../../utils/toggleDrawer";
-import { SearchList, Modal } from "../../components/index";
+import { Modal } from "../../components/index";
+import Initial from "../../container/Initial";
 
 function Home() {
   const [capturedPokemons, setCapturedPokemons] = useState(false);
 
   return (
     <section>
-      <SearchList />
+      <Initial />
       <Button onClick={toggleDrawer("right", true, setCapturedPokemons)}>
         {"See Catched Pokemon"}
       </Button>
-      <Modal
-        open={capturedPokemons}
-        close={toggleDrawer("right", false, setCapturedPokemons)}
-      />
+      <Modal open={capturedPokemons} close={toggleDrawer("right", false, setCapturedPokemons)} />
     </section>
   );
 }

@@ -1,26 +1,20 @@
-import { createContext, useContext } from "react";
+import { createContext, useState, useContext } from "react";
 import { BehaviorSubject, map, combineLatestWith } from "rxjs";
 
-
 export const rawPokemon$ = new BehaviorSubject<Pokemon[]>([]);
+export const captured$ = new BehaviorSubject<number[]>([]);
+
+
 
 const pokemonWithPower$ = rawPokemon$.pipe(
   map((pokemon) =>
     pokemon.map((p) => ({
       ...p,
       captured: false,
-      power:
-        p.hp +
-        p.attack +
-        p.defense +
-        p.special_attack +
-        p.special_defense +
-        p.speed,
+      power: p.hp + p.attack + p.defense + p.special_attack + p.special_defense + p.speed,
     }))
   )
 );
-
-export const captured$ = new BehaviorSubject<number[]>([]);
 
 export const pokemon$ = pokemonWithPower$.pipe(
   combineLatestWith(captured$),
@@ -32,9 +26,7 @@ export const pokemon$ = pokemonWithPower$.pipe(
   )
 );
 
-export const deck$ = pokemon$.pipe(
-  map((pokemon) => pokemon.filter((p) => p.captured))
-);
+export const deck$ = pokemon$.pipe(map((pokemon) => pokemon.filter((p) => p.captured)));
 
 fetch("data/pokemon-simplified.json")
   .then((res) => res.json())
@@ -48,7 +40,9 @@ const PokemonContext = createContext({
   deck$,
 });
 
-export const usePokemon = () => useContext(PokemonContext);
+export const usePokemon = () => {
+  return useContext(PokemonContext);
+};
 
 export const PokemonProvider: React.FunctionComponent = ({ children }) => (
   <PokemonContext.Provider value={{ pokemon$, captured$, deck$ }}>
