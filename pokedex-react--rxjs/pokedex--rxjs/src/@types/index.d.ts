@@ -18,10 +18,14 @@ interface PokeProps {
   pokeDetailGo: any;
 }
 
-
 interface ModalProps {
   open: any;
   close: any;
+}
+
+interface PaginateProps {
+  onClickGo: any;
+  onClickBack: any;
 }
 
 interface SearchProps {
@@ -30,5 +34,3 @@ interface SearchProps {
 }
 
 type Anchor = "right";
-
-
