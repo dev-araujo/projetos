@@ -1,10 +1,8 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useContext } from "react";
 import { BehaviorSubject, map, combineLatestWith } from "rxjs";
 
 export const rawPokemon$ = new BehaviorSubject<Pokemon[]>([]);
 export const captured$ = new BehaviorSubject<number[]>([]);
-
-
 
 const pokemonWithPower$ = rawPokemon$.pipe(
   map((pokemon) =>
