@@ -1,6 +1,7 @@
 @import "./styles/reset.scss";
 @import "./styles/variables.scss";
 @import "./styles/pokemon-colors-type.scss";
+@import "./styles/btn.scss";
 
 html {
   font-family: Roboto, sans-serif;
@@ -10,5 +11,6 @@ main {
   max-width: 600px;
   margin: 0 auto;
   box-sizing: border-box;
+  
   
 }

@@ -1,13 +1,11 @@
- .footer-paginate {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem;
+.footer-paginate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
 
-    p {
-      color: var(--white);
-      cursor: pointer;
-      margin-top:-1.5rem;
-    }
-    
+  p {
+    color: var(--white);
+    cursor: pointer;
   }
+}

@@ -1,4 +1,5 @@
-interface Pokemon { // pokemons
+interface Pokemon {
+  // pokemons
   id: number;
   name: string;
   type: string[];
@@ -10,15 +11,13 @@ interface Pokemon { // pokemons
   speed: number;
   power?: number;
   captured?: boolean;
+  type:string[]
 }
 
-
-
-
 // pagination
-interface ControlPages{
-  initial:number;
-  end:number;
+interface ControlPages {
+  initial: number;
+  end: number;
 }
 
 // props paginate
@@ -26,7 +25,6 @@ interface PaginateProps {
   onClickGo: any;
   onClickBack: any;
 }
-
 
 // props Card
 interface PokeProps {
@@ -39,6 +37,13 @@ interface PokeProps {
 interface ModalProps {
   open: any;
   close: any;
+}
+
+// props Stats
+
+interface StatsProps {
+ stat:number,
+ name:string
 }
 
 // search

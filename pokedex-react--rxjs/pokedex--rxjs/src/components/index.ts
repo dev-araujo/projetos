@@ -4,3 +4,4 @@ export {default as Modal} from './Modal/index'
 export { default as Banner } from "./Banner/index";
 export { default as List } from "./List/index";
 export { default as FooterPaginate } from "./FooterPaginate/index";
+export { default as Stats } from "./Stats/index";
