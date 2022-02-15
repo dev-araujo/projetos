@@ -1,7 +1,5 @@
-type Anchor = "right"
-
-export const toggleDrawer = (anchor: Anchor, open: boolean,set: any) =>
-  (event: React.KeyboardEvent | React.MouseEvent) => {
+export const toggleDrawer =
+  (anchor: Anchor, set: any) => (event: React.KeyboardEvent | React.MouseEvent) => {
     if (
       event.type === "keydown" &&
       ((event as React.KeyboardEvent).key === "Tab" ||
@@ -10,5 +8,5 @@ export const toggleDrawer = (anchor: Anchor, open: boolean,set: any) =>
       return;
     }
 
-    set(open);
+    set.next(false);
   };

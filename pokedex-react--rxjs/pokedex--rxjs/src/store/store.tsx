@@ -3,6 +3,8 @@ import { BehaviorSubject, map, combineLatestWith } from "rxjs";
 
 export const rawPokemon$ = new BehaviorSubject<Pokemon[]>([]);
 export const captured$ = new BehaviorSubject<number[]>([]);
+export const paginate$ = new BehaviorSubject<ControlPages | any>({ initial: 0, end: 15 });
+export const openModal$ = new BehaviorSubject<boolean>(false);
 
 const pokemonWithPower$ = rawPokemon$.pipe(
   map((pokemon) =>
@@ -28,14 +30,16 @@ export const deck$ = pokemon$.pipe(map((pokemon) => pokemon.filter((p) => p.capt
 
 fetch("data/pokemon-simplified.json")
   .then((res) => res.json())
-  .then((data) => rawPokemon$.next(data.splice(0, 150)));
+  .then((data) => rawPokemon$.next(data.splice(0, 151)));
 
-// -- context
+// -- CONTEXT
 
 const PokemonContext = createContext({
   pokemon$,
   captured$,
   deck$,
+  paginate$,
+  openModal$,
 });
 
 export const usePokemon = () => {
@@ -43,7 +47,7 @@ export const usePokemon = () => {
 };
 
 export const PokemonProvider: React.FunctionComponent = ({ children }) => (
-  <PokemonContext.Provider value={{ pokemon$, captured$, deck$ }}>
+  <PokemonContext.Provider value={{ pokemon$, captured$, deck$, paginate$, openModal$ }}>
     {children}
   </PokemonContext.Provider>
 );

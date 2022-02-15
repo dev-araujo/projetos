@@ -7,7 +7,7 @@ function Search({ searchValue,onChangeCall }: SearchProps) {
       <input
         className="poke-search__input"
         type="search"
-        value={searchValue.value}
+        value={searchValue}
         onChange={onChangeCall}
       />
       <img src={SearchIcon} alt="lupa" />

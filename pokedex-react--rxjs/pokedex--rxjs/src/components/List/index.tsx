@@ -4,7 +4,7 @@ import { goToPokemonDetails } from "../../routes/Coordinator";
 
 import "./styles.scss";
 
-function List({ pokemons, start, end }: any) {
+function List( {pokemons}: any) {
   let navigate = useNavigate();
   return (
     <section className="poke-list">
@@ -18,7 +18,7 @@ function List({ pokemons, start, end }: any) {
             />
           </div>
         ))
-        .slice(start, end)}
+        }
     </section>
   );
 }

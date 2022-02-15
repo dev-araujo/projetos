@@ -2,11 +2,11 @@ export const back = (e: React.FormEvent, set: any, state: any) => {
   e.preventDefault();
 
   if (state.initial > 0) {
-    set({ ...state, initial: state.initial - 12, end: state.end - 12 });
+     set.next({ initial: state.initial - 15, end: state.end - 15 });
   }
 };
 
 export const go = (e: React.FormEvent, set: any, state: any) => {
   e.preventDefault();
-  if (state.end < 150) set({ ...state, initial: state.initial + 12, end: state.end + 12 });
+  if (state.end < 151)  set.next({ initial: state.initial + 15, end: state.end + 15 });
 };
