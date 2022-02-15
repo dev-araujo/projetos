@@ -8,7 +8,7 @@ import { Modal } from "../../components/index";
 import { Search, Banner, List, FooterPaginate } from "../../components/index";
 import Logo from "../../assets/logo.svg";
 import NotFound from "../../assets/not_found.png";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 
 import "./styles.scss";
 

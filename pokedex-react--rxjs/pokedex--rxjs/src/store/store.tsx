@@ -6,7 +6,7 @@ export const captured$ = new BehaviorSubject<number[]>([]);
 export const paginate$ = new BehaviorSubject<ControlPages | any>({ initial: 0, end: 15 });
 export const openModal$ = new BehaviorSubject<boolean>(false);
 
-const pokemonWithPower$ = rawPokemon$.pipe(
+export const pokemonWithPower$ = rawPokemon$.pipe(
   map((pokemon) =>
     pokemon.map((p) => ({
       ...p,
@@ -15,6 +15,8 @@ const pokemonWithPower$ = rawPokemon$.pipe(
     }))
   )
 );
+
+
 
 export const pokemon$ = pokemonWithPower$.pipe(
   combineLatestWith(captured$),
@@ -25,6 +27,7 @@ export const pokemon$ = pokemonWithPower$.pipe(
     }))
   )
 );
+
 
 export const deck$ = pokemon$.pipe(map((pokemon) => pokemon.filter((p) => p.captured)));
 
@@ -40,6 +43,7 @@ const PokemonContext = createContext({
   deck$,
   paginate$,
   openModal$,
+  pokemonWithPower$,
 });
 
 export const usePokemon = () => {
@@ -47,7 +51,9 @@ export const usePokemon = () => {
 };
 
 export const PokemonProvider: React.FunctionComponent = ({ children }) => (
-  <PokemonContext.Provider value={{ pokemon$, captured$, deck$, paginate$, openModal$ }}>
+  <PokemonContext.Provider
+    value={{ pokemon$, captured$, deck$, paginate$, openModal$, pokemonWithPower$ }}
+  >
     {children}
   </PokemonContext.Provider>
 );

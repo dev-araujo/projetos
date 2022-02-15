@@ -1,0 +1,30 @@
+.status {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+  p {
+    text-align: justify;
+    font-size: 14px;
+    max-width: 180px;
+  }
+
+  &__progressbar {
+    padding: 3px;
+    border: 0 none;
+    background: var(--back-tag);
+    border-radius: 14px;
+  }
+  &__progressbar::-webkit-progress-bar {
+    background: transparent;
+  }
+  &__progressbar::-webkit-progress-value {
+    border-radius: 12px;
+    background: var(--secondary-color);
+  }
+  @media (max-width: 420px) {
+    &__progressbar {
+      min-width: 280px;
+    }
+  }
+}
