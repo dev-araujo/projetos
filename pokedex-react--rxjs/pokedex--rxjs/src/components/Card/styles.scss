@@ -1,20 +1,28 @@
 .poke-card {
-  width: 120px;
+  width: 7.5rem;
   text-align: center;
   color: var(--white);
-  margin: 1rem;
+  margin-top: 0.5rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  &__no-captured {
-    width: auto;
+  &__figure {
+    height: 7.5rem;
+
+    display: flex;
+    align-items: center;
   }
-  &__captured{
-    max-width:80px;
-    margin-bottom:1rem;
-  
+
+  &__no-captured,&__captured {
+    width: 3.75rem;
+  }
+
+  &__pokename,
+  &__pokedetails,
+  &__figure {
+    cursor: pointer;
   }
 }

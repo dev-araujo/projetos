@@ -1,22 +1,22 @@
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { BehaviorSubject, combineLatestWith, map } from "rxjs";
 import { useObservableState } from "observable-hooks";
 import { usePokemon } from "../../store/store";
 import { go, back } from "../../utils/changePage";
+import { toggleDrawer } from "../../utils/toggleDrawer";
+import { Modal } from "../../components/index";
 import { Search, Banner, List, FooterPaginate } from "../../components/index";
 import Logo from "../../assets/logo.svg";
 import NotFound from "../../assets/not_found.png";
+import Button from "@mui/material/Button";
 
 import "./styles.scss";
 
 function Initial() {
-  const [page, setPage] = useState({
-    initial: 0,
-    end: 12,
-  });
-  const { pokemon$ } = usePokemon();
+  const { pokemon$, paginate$, openModal$ } = usePokemon();
   const search$ = useMemo(() => new BehaviorSubject(""), []);
-  const pokemon = useObservableState(pokemon$, []);
+  const paginate = useObservableState(paginate$, { initial: 0, end: 15 });
+  const openModal = useObservableState(openModal$, false);
 
   const [filterPokemon] = useObservableState(
     () =>
@@ -41,18 +41,21 @@ function Initial() {
           <List
             pokemons={
               search$.value.length <= 0
-                ? filterPokemon.slice(page.initial, page.end)
-                : filterPokemon.slice(0, 150)
+                ? filterPokemon.slice(paginate.initial, paginate.end)
+                : filterPokemon.slice(0, 151)
             }
           />
         ) : (
-          <img  src={NotFound} alt={"not found"} />
+          <img src={NotFound} alt={"not found"} />
         )}
       </section>
       <FooterPaginate
-        onClickBack={(e: React.FormEvent) => back(e, setPage, page)}
-        onClickGo={(e: React.FormEvent) => go(e, setPage, page)}
+        onClickBack={(e: React.FormEvent) => back(e, paginate$, paginate)}
+        onClickGo={(e: React.FormEvent) => go(e, paginate$, paginate)}
       />
+
+      {/* <Button onClick={() => openModal$.next(!openModal)}>Teste</Button> */}
+      <Modal open={openModal} close={toggleDrawer("right", openModal$)} />
     </form>
   );
 }

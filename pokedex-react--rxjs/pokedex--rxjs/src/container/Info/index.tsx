@@ -9,7 +9,7 @@ function Info() {
   return (
     <div>
       <img
-        src={`${pokeImage}${id}.png`}
+        src={`${pokeImage}${id}.svg`}
         alt={"po"}
       />
       <button onClick={()=>goToInitial(navigate)}>voltar</button>
