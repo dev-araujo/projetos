@@ -1,8 +1,13 @@
-.initial{
+.initial {
+  &__list {
 
- &__list{
-   display:flex;
-   justify-content: center;
-   
- }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__modal{
+    color:var(--white) !important;
+    font-style:italic !important;
+  }
 }

@@ -16,8 +16,6 @@ export const pokemonWithPower$ = rawPokemon$.pipe(
   )
 );
 
-
-
 export const pokemon$ = pokemonWithPower$.pipe(
   combineLatestWith(captured$),
   map(([pokemon, captured]) =>
@@ -27,7 +25,6 @@ export const pokemon$ = pokemonWithPower$.pipe(
     }))
   )
 );
-
 
 export const deck$ = pokemon$.pipe(map((pokemon) => pokemon.filter((p) => p.captured)));
 

@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { usePokemon } from "../../store/store";
 import { pokeImage } from "../../constant/url";
+
 import Pokeball from "../../assets/pokeball.png";
+
 import "./styles.scss";
 
 function Card({ pokeName, pokeId, pokeDetailGo }: PokeProps) {
@@ -32,7 +34,7 @@ function Card({ pokeName, pokeId, pokeDetailGo }: PokeProps) {
             onMouseLeave={() => setPokeInfo(!pokeInfo)}
             onClick={pokeDetailGo}
           >
-            detalhes
+            Detalhes
           </p>
         ) : (
           <p onMouseOver={() => setPokeInfo(!pokeInfo)} className="poke-card__pokename">

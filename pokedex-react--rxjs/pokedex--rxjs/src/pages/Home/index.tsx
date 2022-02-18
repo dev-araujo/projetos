@@ -1,7 +1,7 @@
 import Initial from "../../container/Initial";
 
 function Home() {
-  return <Initial />;
+  return (<Initial />);
 }
 
 export default Home;
