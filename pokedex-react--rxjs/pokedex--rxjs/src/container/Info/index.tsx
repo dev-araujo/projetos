@@ -1,12 +1,13 @@
+import { map } from "rxjs";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router";
+import { useObservableState } from "observable-hooks";
+
 import { pokeImage } from "./../../constant/url";
 import { goToInitial } from "../../routes/Coordinator";
 import { usePokemon } from "../../store/store";
-import { useObservableState } from "observable-hooks";
-import { map } from "rxjs";
 
-import { Stats } from "../../components/index";
+import { Stats, Types, HeaderName } from "../../components/index";
 
 import "./styles.scss";
 
@@ -21,45 +22,28 @@ function Info() {
   );
 
   return (
-    <div>
-      <section className="pokemon__names">
-        {pokemon[0].map((poke: any) => {
-          return (
-            <div key={poke?.name}>
-              <h1 className="slideInLeft">{poke?.name}</h1>
-              <h2 className="slideInRight">{poke?.name}</h2>
-            </div>
-          );
-        })}
-      </section>
+    <section id="pokemon-info">
+      <HeaderName pokemon={pokemon[0]} />
 
       <section className="pokemon__status">
-        <img src={`${pokeImage}${id}.svg`} alt={"po"} className="slideInDown" />
+        <img src={`${pokeImage}${id}.svg`} alt={"pokemon"} className="slideInDown" />
 
         <article className="pokemon__status__statistics fadeIn">
           <section>
             <h3>Estatísticas</h3>
-            {pokemon[0].map((poke) => {
-              return Object.values(poke?.type).map((type: string) => {
-                return (
-                  <span key={type}>
-                    <span className={type.toLocaleLowerCase()}>{type}</span>
-                  </span>
-                );
-              });
-            })}
+            <Types pokemon={pokemon[0]} />
             <ol>
               <li>
                 {pokemon[0].map((poke: any) => {
                   return (
-                    <div className="pokemon__status-skill" key={poke?.name}>
-                      <Stats name={"Power"} stat={poke.power} />
-                      <Stats name={"Attack"} stat={poke.attack} />
-                      <Stats name={"Defense"} stat={poke.defense} />
-                      <Stats name={"Special-Attack"} stat={poke.special_attack} />
-                      <Stats name={"Specia-Defense"} stat={poke.special_defense} />
-                      <Stats name={"Speed"} stat={poke.speed} />
-                    </div>
+                    <section className="pokemon__status-skill" key={poke?.name}>
+                      <Stats name={"Poder"} stat={poke.power} />
+                      <Stats name={"Ataque"} stat={poke.attack} />
+                      <Stats name={"Defesa"} stat={poke.defense} />
+                      <Stats name={"Ataque Especial"} stat={poke.special_attack} />
+                      <Stats name={"Defesa Especial"} stat={poke.special_defense} />
+                      <Stats name={"Velocidade"} stat={poke.speed} />
+                    </section>
                   );
                 })}
               </li>
@@ -71,7 +55,7 @@ function Info() {
           </a>
         </article>
       </section>
-    </div>
+    </section>
   );
 }
 

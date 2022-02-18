@@ -23,8 +23,11 @@
     background: var(--secondary-color);
   }
   @media (max-width: 420px) {
+     width:100vw;
     &__progressbar {
-      min-width: 280px;
+      max-width: 240px;
+      margin-right:3rem;
     }
   }
+
 }
