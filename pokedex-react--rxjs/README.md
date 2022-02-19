@@ -4,7 +4,7 @@
 
 ## 💻 Projeto
 
-#### Este projeto é uma "pokedex" com a listagem dos 151 pokemons(paginados),campo de busca e visualização de seus detalhes. 
+#### Este projeto é uma "pokedex" com a listagem dos 151 pokemons(paginados),campo de busca, visualização de seus detalhes e possibilidade de captura.
  **Criado para praticar o uso de [RxJS](https://rxjs.dev/)**
 
 - O resultado pode ser conferido :arrow_right: [**AQUI**](https://pokedex-rxjs.dev-araujo.repl.co/)
