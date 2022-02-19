@@ -37,12 +37,12 @@ function Info() {
                 {pokemon[0].map((poke: any) => {
                   return (
                     <section className="pokemon__status-skill" key={poke?.name}>
-                      <Stats name={"Poder"} stat={poke.power} />
-                      <Stats name={"Ataque"} stat={poke.attack} />
-                      <Stats name={"Defesa"} stat={poke.defense} />
-                      <Stats name={"Ataque Especial"} stat={poke.special_attack} />
-                      <Stats name={"Defesa Especial"} stat={poke.special_defense} />
-                      <Stats name={"Velocidade"} stat={poke.speed} />
+                      <Stats name={"-Poder"} stat={poke.power} />
+                      <Stats name={"-Ataque"} stat={poke.attack} />
+                      <Stats name={"-Defesa"} stat={poke.defense} />
+                      <Stats name={"-Ataque Especial"} stat={poke.special_attack} />
+                      <Stats name={"-Defesa Especial"} stat={poke.special_defense} />
+                      <Stats name={"-Velocidade"} stat={poke.speed} />
                     </section>
                   );
                 })}
