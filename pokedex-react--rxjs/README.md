@@ -7,7 +7,7 @@
 #### Este projeto é uma "pokedex" com a listagem dos 151 pokemons(paginados),campo de busca e visualização de seus detalhes. 
  **Criado para praticar o uso de [RxJS](https://rxjs.dev/)**
 
-- O resultado pode ser conferido :arrow_right: [**AQUI**](https://pokedex.dev-araujo.repl.co/)
+- O resultado pode ser conferido :arrow_right: [**AQUI**](https://pokedex-rxjs.dev-araujo.repl.co/)
 <h1 align="center">
 
   <img src='https://user-images.githubusercontent.com/97068163/154776838-cd4790ed-88be-4a8e-95b2-40d5df0ef63d.png' width="50%"/> <img src='https://user-images.githubusercontent.com/97068163/154776836-f2dc831c-e661-4464-aeaf-1945fd1695c3.png' width="50%"/>
