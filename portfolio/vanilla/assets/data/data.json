@@ -25,8 +25,14 @@
   },
   {
     "id": 5,
-    "name": "Ws-work",
-    "url": "https://github.com/dev-araujo/desafios/tree/main/ws-work",
-    "image": "https://user-images.githubusercontent.com/97068163/149378575-4c46f6e1-1bfa-4791-b2c4-79d9f4b36d31.png"
-  }
+    "name": "Pokedex-rxjs",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/pokedex-react--rxjs",
+    "image": "https://user-images.githubusercontent.com/97068163/154776838-cd4790ed-88be-4a8e-95b2-40d5df0ef63d.png"
+  },
+    {
+      "id": 6,
+      "name": "Tarot",
+      "url": "https://github.com/dev-araujo/tarot",
+      "image": "https://user-images.githubusercontent.com/97068163/154370004-ff26ecdc-718c-4701-983e-69686b814532.png"
+    }
 ]
