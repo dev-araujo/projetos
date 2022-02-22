@@ -21,10 +21,12 @@
 - React JS
   - Hooks
   - Context-Api
+- TypeScript 
+- RxJS
 - Material-Ui
 - React-router
+- Observable-hooks
 - SASS
-- RxJS
 
 
 ### Instruções para rodar
