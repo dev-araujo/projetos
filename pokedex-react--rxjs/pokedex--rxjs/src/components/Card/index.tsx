@@ -1,13 +1,13 @@
-import { useState } from "react";
 import { usePokemon } from "../../store/store";
 import { pokeImage } from "../../constant/url";
+
+import Tooltip from "@mui/material/Tooltip";
 
 import Pokeball from "../../assets/pokeball.png";
 
 import "./styles.scss";
 
 function Card({ pokeName, pokeId, pokeDetailGo }: PokeProps) {
-  const [pokeInfo, setPokeInfo] = useState<boolean>(false);
   const { captured$ } = usePokemon();
 
   return (
@@ -28,19 +28,18 @@ function Card({ pokeName, pokeId, pokeDetailGo }: PokeProps) {
       </figure>
 
       <section className="poke-card__footer">
-        {pokeInfo ? (
-          <p
-            className="poke-card__pokedetails"
-            onMouseLeave={() => setPokeInfo(!pokeInfo)}
-            onClick={pokeDetailGo}
-          >
-            Detalhes
-          </p>
-        ) : (
-          <p onMouseOver={() => setPokeInfo(!pokeInfo)} className="poke-card__pokename">
+        <Tooltip
+          title={
+            <p className="poke-card__pokedetails" onClick={pokeDetailGo}>
+              DETALHES
+            </p>
+          }
+          placement="top-start"
+        >
+          <div onClick={pokeDetailGo} className="poke-card__pokedetails">
             {pokeName}
-          </p>
-        )}
+          </div>
+        </Tooltip>
       </section>
     </section>
   );

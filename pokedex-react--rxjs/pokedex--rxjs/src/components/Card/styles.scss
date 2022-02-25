@@ -25,4 +25,10 @@
   &__figure {
     cursor: pointer;
   }
+
+  &__pokedetails{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
 }

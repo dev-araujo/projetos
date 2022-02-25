@@ -6,7 +6,7 @@
   align-items: center;
 
   @media (max-width: 420px) {
-    width: 22rem;
+    max-width: 100%;
   }
 
   &__header {
@@ -39,12 +39,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 420px) {
+      margin-left: 0.4rem;
+    }
   }
 
   &__captured {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 420px) {
+      margin-left: 0.7rem;
+    }
   }
 
   &__pokemon {
