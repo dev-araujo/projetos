@@ -3,13 +3,15 @@
 :root {
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
-  
+
   --color-golden: #DCCA87;
   --color-black: #0C0C0C;
   --color-gray: #545454;
   --color-crimson: #F5EFDB;
   --color-grey: #AAAAAA;
   --color-white: #FFFFFF;
+
+  --color-golden-selection: #e0a75c;
 }
 
 * {
@@ -17,6 +19,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+
+}
+*::selection {
+  background: var(--color-golden-selection);
+  color: var(--color-white);
 }
 
 a {
