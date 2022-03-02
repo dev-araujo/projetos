@@ -15,9 +15,9 @@ O intuito desse repositório é reunir em um só lugar meus pequenos **projetos*
 
 **<details><summary>Projetos React ⚛️</summary>**
 
- - [**Pokedex com RxJS**](https://github.com/dev-araujo/projetos/tree/main/pokedex-react--rxjs)
- - [**Chuck jokes app**](https://github.com/dev-araujo/projetos/tree/main/chuck-jokes) 
- - [**Astromach app**](https://github.com/dev-araujo/projetos/tree/main/astromach)
+ - [**Pokedex com RxJS**](https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs)
+ - [**Chuck jokes app**](https://github.com/dev-araujo/projetos/tree/main/React/chuck-jokes) 
+ - [**Astromach app**](https://github.com/dev-araujo/projetos/tree/main/React/astromach)
   
  
 
@@ -26,7 +26,7 @@ O intuito desse repositório é reunir em um só lugar meus pequenos **projetos*
 
 **<details><summary>Projetos Angular 🅰️ </summary>**
   
-  - [**Pokedex**](https://github.com/dev-araujo/projetos/tree/main/pokedex-angular)
+  - [**Pokedex**](https://github.com/dev-araujo/projetos/tree/main/Angular/pokedex-angular)
   
   </details>
 
