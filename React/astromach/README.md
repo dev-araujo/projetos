@@ -32,7 +32,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd astromach/astromach_app
+cd React/astromach/astromach_app
 ```
 
 Instale as dependências:
