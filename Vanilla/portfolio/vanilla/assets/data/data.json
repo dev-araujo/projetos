@@ -2,31 +2,31 @@
   {
     "id": 1,
     "name": "Astromach",
-    "url": "https://github.com/dev-araujo/projetos/tree/main/astromach/astromach_app",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/React/astromach/astromach_app",
     "image": "https://user-images.githubusercontent.com/60116988/147890790-06c21357-6d31-4880-8b8d-a29b72041db2.png"
   },
   {
     "id": 2,
     "name": "Pokedex-angular",
-    "url": "https://github.com/dev-araujo/projetos/tree/main/pokedex-angular",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/Angular/pokedex-angular",
     "image": "https://user-images.githubusercontent.com/97068163/151001628-9465160c-01e8-4a34-88b0-8a5000156a1f.png"
   },
   {
     "id": 3,
     "name": "Chuck-Jokes",
-    "url": "https://github.com/dev-araujo/projetos/tree/main/chuck-jokes/chuck_app",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/React/chuck-jokes/chuck_app",
     "image": "https://user-images.githubusercontent.com/97068163/149026115-487b8728-abc3-42e0-90fe-507c68348cd6.png"
   },
   {
     "id":4,
     "name": "BRLOGIC",
-    "url": "https://github.com/dev-araujo/desafios/blob/main/brlogic/README.md",
+    "url": "https://github.com/dev-araujo/desafios/blob/main/React/brlogic/README.md",
     "image": "https://user-images.githubusercontent.com/97068163/149625085-1fc6c49c-c14b-45ac-aebf-eb3e71699d75.png"
   },
   {
     "id": 5,
     "name": "Pokedex-rxjs",
-    "url": "https://github.com/dev-araujo/projetos/tree/main/pokedex-react--rxjs",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs",
     "image": "https://user-images.githubusercontent.com/97068163/154776838-cd4790ed-88be-4a8e-95b2-40d5df0ef63d.png"
   },
     {
