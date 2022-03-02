@@ -31,7 +31,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd pokedex-angular/pokedex
+cd Angular/pokedex-angular/pokedex
 ```
 
 Instale as dependências:
