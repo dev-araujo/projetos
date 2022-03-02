@@ -39,7 +39,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd pokedex-react--rxjs/pokedex--rxjs
+cd React/pokedex-react--rxjs/pokedex--rxjs
 ```
 
 Instale as dependências:

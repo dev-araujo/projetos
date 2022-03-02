@@ -42,7 +42,7 @@ git clone
 
 Entre na pasta do projeto:
 ```
-cd chuck-jokes/chuck_app
+cd React/chuck-jokes/chuck_app
 ```
 
 Instale as dependências:
