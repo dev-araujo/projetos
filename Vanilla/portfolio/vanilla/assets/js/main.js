@@ -90,7 +90,7 @@ const main = () => {
 		container.appendChild(div);
 	});
 
-	console.log(projects);
+	
 };
 
 main();

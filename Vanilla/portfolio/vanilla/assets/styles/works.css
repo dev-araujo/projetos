@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --body-font: "Poppins", sans-serif;
+  --first-color: #4070f4;
+  --secondary-color: #697caf;
+  --background-text: #587ce0b4;
+
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  display: grid;
+  place-items: center;
+  font-family: var(--body-font);
+}
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 2rem auto;
+  
+}
+h1 {
+  position: relative;
+  font-size:2.4rem;
+  color: var(--first-color);
+  text-align: center;
+}
+h1:after{
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 0.18rem;
+  left:0;
+  right: 0;
+  margin: auto;
+  top:3rem;
+  background-color: var(--first-color);
+}
+
+.button {
+  margin-top: 0.8rem;
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.5rem 3rem;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  margin-top:-1rem;
+}
+.button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 350px;
+    border-radius: 10px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.182) 46.6%,
+    rgba(0, 0, 0, 0.249) 53.1%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.394) 64.3%,
+    rgba(0, 0, 0, 0.468) 69.3%,
+    rgba(0, 0, 0, 0.54) 74.1%,
+    rgba(0, 0, 0, 0.607) 78.8%,
+    rgba(0, 0, 0, 0.668) 83.6%,
+    rgba(0, 0, 0, 0.721) 88.7%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.79) 100%
+  );
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: url(https://dev-araujo.com.br/assets/images/perfil.png);
+  background-size: cover;
+  background-position: center;
+}
+.card:nth-child(2):before {
+  background-image: url(https://user-images.githubusercontent.com/97068163/156898220-b505cfd1-e44f-4e12-ac64-4ff2d38ac998.png);
+  background-position: center;
+}
+.card:nth-child(3):before {
+  background-image: url(https://user-images.githubusercontent.com/97068163/151001628-9465160c-01e8-4a34-88b0-8a5000156a1f.png);
+  background-size: 118% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card:nth-child(4):before {
+  background-image: url(https://user-images.githubusercontent.com/97068163/149026115-487b8728-abc3-42e0-90fe-507c68348cd6.png);
+  background-position: 296px -18px;
+}
+.card:nth-child(5):before {
+  background-image: url(https://user-images.githubusercontent.com/60116988/147890790-06c21357-6d31-4880-8b8d-a29b72041db2.png);
+  background-position: center;
+}
+.card:nth-child(6):before {
+  background-image: url(https://user-images.githubusercontent.com/97068163/154776838-cd4790ed-88be-4a8e-95b2-40d5df0ef63d.png);
+  background-position: center;
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(7):before {
+  background-image: url(https://user-images.githubusercontent.com/97068163/149625085-1fc6c49c-c14b-45ac-aebf-eb3e71699d75.png);
+}
+.card:nth-child(8):before {
+  background-image: url(https://user-images.githubusercontent.com/97068163/149378575-4c46f6e1-1bfa-4791-b2c4-79d9f4b36d31.png);
+  background-position: cover;
+}
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background: #4070f4;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.copy {
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+.copy--shine {
+  background: var(--background-text);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--first-color);
+  border: none;
+  border-radius: 2px;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+.btn:focus {
+  outline-offset: 3px;
+}
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+  .card:hover,
+  .card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+  .card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+  .card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+  .card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+  .card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+  .card:focus-within:before,
+  .card:focus-within:after,
+  .card:focus-within .content,
+  .card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
