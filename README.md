@@ -9,7 +9,7 @@ O intuito desse repositório é reunir em um só lugar meus pequenos **projetos*
 
 **<details><summary>Projetos Vanilla🍦</summary>**
   
- - [**Portfólio**](https://github.com/dev-araujo/projetos/tree/main/portfolio/vanilla) 
+ - [**Portfólio**](https://github.com/dev-araujo/projetos/tree/main/Vanilla/portfolio/vanilla) 
 
 </details>
 

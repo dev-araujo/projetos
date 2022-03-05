@@ -18,7 +18,7 @@
 ## Feito com 🔨
 - **Angular 13**
 - ngx-pagination
-- SCSS
+- SASS
 
 
 ### Instruções para rodar
