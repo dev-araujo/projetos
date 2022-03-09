@@ -1,7 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 @import "./styles/reset.scss";
+@import "./styles/variables.scss";
 
-html{
-  font-family: Roboto, sans-serif;
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: var(--font-default);
+  font-size:var(--font-size-default);
 }

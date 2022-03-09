@@ -13,8 +13,8 @@
   vertical-align: baseline;
 }
 *::selection {
-  background: var(--select);
-  color: var(--white);
+  background: var(--color-select);
+  color: var(--color-white);
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -33,6 +33,10 @@ section {
 body {
   line-height: 1;
   overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+  color:var(--color-text-default);
 }
 
 ol,
