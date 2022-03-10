@@ -1,0 +1,29 @@
+:host {
+  .footer {
+    background: var(--color-default);
+    color: var(--color-white);
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+
+    &__link,
+    &__text {
+      font-size: var(--font-size-default);
+      font-family: var(--font-titles);
+    }
+
+    &__link {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    &__favorite-icon {
+      font-size: var(--font-default);
+      color:var(--color-emphasis);
+    }
+  }
+}
