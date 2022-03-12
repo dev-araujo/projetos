@@ -12,7 +12,6 @@
   font: inherit;
   vertical-align: baseline;
 
-
 }
 *::selection {
   background: var(--color-select);
@@ -32,6 +31,7 @@ nav,
 section {
   display: block;
 }
+
 
 body {
   line-height: 1;
@@ -54,7 +54,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
