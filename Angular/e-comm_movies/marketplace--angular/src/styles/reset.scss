@@ -11,6 +11,8 @@
   font-weight: 400;
   font: inherit;
   vertical-align: baseline;
+
+
 }
 *::selection {
   background: var(--color-select);
@@ -30,6 +32,7 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
   overflow-x: hidden;

@@ -7,28 +7,34 @@
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-    &__title {
-      font-family: var(--font-classic);
-      font-size: var(--font-size-1);
+    &__group {
+      display: flex;
+      align-items: center;
 
-      letter-spacing: 2px;
-      opacity: 0.8;
-      transition: 0.2s;
+      .header__title {
+        font-family: var(--font-classic);
+        font-size: var(--font-size-1);
 
-      &:hover {
-        font-size: var(--font-size-2);
-        opacity: 1;
+        letter-spacing: 2px;
+        opacity: 0.8;
+        transition: 0.2s;
+
+        &:hover {
+          font-size: var(--font-size-2);
+          opacity: 1;
+        }
       }
-    }
 
-    &__button {
-      background: var(--color-emphasis);
-      color: var(--color-default);
+      .header__button {
+        background: var(--color-emphasis);
+        color: var(--color-default);
 
-      padding: 0.7rem;
-      border-radius: 10px;
-      margin-left: 2rem;
+        padding: 0.7rem;
+        border-radius: 10px;
+        margin-left: 2rem;
+      }
     }
   }
 }
