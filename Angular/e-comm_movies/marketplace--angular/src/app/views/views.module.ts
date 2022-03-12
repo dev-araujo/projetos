@@ -10,4 +10,4 @@ import { HomeComponent } from './home/home.component';
   declarations: [HomeComponent],
   imports: [CommonModule, RoutingModule, ComponentsModule],
 })
-export class PagesModule {}
+export class ViewsModule {}
