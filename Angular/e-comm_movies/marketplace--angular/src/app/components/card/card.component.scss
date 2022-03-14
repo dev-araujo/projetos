@@ -1,0 +1,34 @@
+:host {
+  .card {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__movie {
+      width: 18rem;
+      height: auto;
+      margin: 0 1rem 1rem 0;
+    }
+    &__content {
+      width: 20rem;
+      height: 26rem;
+      padding: 0.4rem;
+    }
+
+    &__img {
+      width: 18rem;
+      height: 18rem;
+      opacity: 0.8;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &__description {
+      text-align: left;
+    }
+  }
+}
