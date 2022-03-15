@@ -1,21 +1,22 @@
 <section class="card">
   <div class="card__movie" *ngFor="let movie of movieList">
-    <h2>{{ movie.name }}</h2>
-
-    <h3>{{ movie.category }}</h3>
-
     <section class="card__content">
       <img class="card__img" src="{{ movie.imgLink }}" alt="{{ movie.name }}" />
-      <p class="card__description">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
-      <div>
+      <header class="card__header">
+        <h2>
+          {{
+            movie.name.length > 23
+              ? movie.name.substring(0, 16) + '...'
+              : movie.name
+          }}
+        </h2>
+
+        <h3>{{ movie.category }}</h3>
+      </header>
+      <footer>
         <p>{{ movie.price }}</p>
         <button>Add</button>
-      </div>
+      </footer>
     </section>
   </div>
 </section>

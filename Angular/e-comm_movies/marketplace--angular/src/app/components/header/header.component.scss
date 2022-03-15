@@ -3,7 +3,11 @@
     background: var(--color-default);
     color: var(--color-white);
 
+    position: fixed;
+    top:0;
+
     height: 100px;
+    width:100%;
 
     display: flex;
     align-items: center;
@@ -36,5 +40,6 @@
         margin-left: 2rem;
       }
     }
+   
   }
 }

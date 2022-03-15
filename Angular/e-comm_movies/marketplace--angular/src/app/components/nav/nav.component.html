@@ -8,6 +8,10 @@
     fixedToGap="100"
     position="end"
   >
+    <button mat-icon-button (click)="sidenav.toggle()" class="nav__button--inside">
+      <i [class]="options[1]" (click)="changeIcon()"></i>
+    </button>
+
     <ul class="nav__list">
       <li>
         <a mat-list-item routerLink="/">

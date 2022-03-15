@@ -1,9 +1,15 @@
 :host {
   .content-home {
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     background: url(../../../assets/wonderful.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+
+     @media (max-width: 420px) {
+      background-position:center;
+    }
   }
+
 }

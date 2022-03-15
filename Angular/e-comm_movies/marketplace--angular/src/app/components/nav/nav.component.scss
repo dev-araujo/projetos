@@ -32,13 +32,20 @@
       background-color: var(--color-default);
 
       width: 100%;
+      border: none;
     }
 
-    &__button {
+    &__button,
+    &__button--inside {
       background: var(--color-default);
       color: var(--color-white);
 
       cursor: pointer;
+    }
+    &__button--inside {
+      position: fixed;
+      top: 2rem;
+      right: 14rem;
     }
   }
 }
