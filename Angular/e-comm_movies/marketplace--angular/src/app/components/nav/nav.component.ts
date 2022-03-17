@@ -15,7 +15,7 @@ export class NavComponent implements OnInit {
 
   changeIcon() {
     if (this.dynamicIcon === this.options[0]) {
-      this.dynamicIcon = '';
+        this.dynamicIcon = ''
     } else {
       this.dynamicIcon = this.options[0];
     }
