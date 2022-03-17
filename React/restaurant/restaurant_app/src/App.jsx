@@ -19,10 +19,11 @@ function App() {
       <AboutUs />
       <SpecialMenu />
       <Chef />
+      <Intro />
       {/*
 
 
-      <Intro />
+
       <Laurels />
       <Gallery />
       <FindUs />
