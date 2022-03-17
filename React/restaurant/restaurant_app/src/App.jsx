@@ -6,7 +6,8 @@ function App() {
     <div>
       <Navbar />
       <Header />
-      {/* <AboutUs />
+      <AboutUs />
+      {/*
       <Menu />
       <Chef />
       <Intro />
