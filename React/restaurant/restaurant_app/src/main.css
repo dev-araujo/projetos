@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
+  /* fonts */
   --font-base: 'Cormorant Upright', serif;
   --font-alt: 'Open Sans', sans-serif;
 
+  /* colors */
   --color-golden: #DCCA87;
   --color-black: #0C0C0C;
   --color-gray: #545454;
