@@ -6,6 +6,6 @@ import Gallery from "./Gallery";
 import Header from "./Header";
 import Intro from "./Intro";
 import Laurels from "./Laurels";
-import Menu from "./Menu";
+import SpecialMenu from './Menu';
 
-export { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Menu };
+export { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu };
