@@ -22,11 +22,9 @@ function App() {
       <Intro />
       <Laurels />
       <Gallery />
-      {/*
-
-
       <FindUs />
-      <Footer /> */}
+      <Footer/>
+
     </div>
   );
 }
