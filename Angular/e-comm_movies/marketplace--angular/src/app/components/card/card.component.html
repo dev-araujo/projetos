@@ -1,21 +1,22 @@
 <section class="card">
-  <section *ngFor="let movie of movieList">
-    <div
-      class="card__movie"
-      [ngStyle]="{
-        background: 'url(' + movie.imgLink + ')'
-      }"
-    >
-      <article class="card__info">
-        <div>
-          <h2>{{ movie.name.length > 18 ? movie.name.slice(0,18):movie.name }}</h2>
-          <p>{{ movie.category }}</p>
-        </div>
+  <div class="card__movie" *ngFor="let movie of movieList">
+    <section class="card__content">
+      <img class="card__img" src="{{ movie.imgLink }}" alt="{{ movie.name }}" />
+      <header class="card__header">
+        <h2>
+          {{
+            movie.name.length > 23
+              ? movie.name.substring(0, 16) + '...'
+              : movie.name
+          }}
+        </h2>
 
+        <h3>{{ movie.category }}</h3>
+      </header>
+      <footer>
         <p>{{ movie.price }}</p>
-
-        <p>Add</p>
-      </article>
-    </div>
-  </section>
+        <button>Add</button>
+      </footer>
+    </section>
+  </div>
 </section>
