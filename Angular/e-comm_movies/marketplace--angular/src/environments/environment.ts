@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://localhost:3001/films',
+  api: 'https://movies.dev-araujo.repl.co/films',
   version: '0.0.1',
 };
 
