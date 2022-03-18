@@ -41,7 +41,12 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__opensans">2021 Gericht. All Rights reserved.</p>
+      <p className="p__opensans">
+        Made by{" "}
+        <a href="https://github.com/dev-araujo" target="_blank">
+          Adriano P. Araujo
+        </a>
+      </p>
     </div>
   </div>
 );
