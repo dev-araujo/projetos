@@ -1,0 +1,16 @@
+:host {
+  .sidebar {
+    width: 16vw;
+    height: 100%;
+    padding-top:4rem;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left{
+    background:var(--color-primary);
+  }
+ 
+}
