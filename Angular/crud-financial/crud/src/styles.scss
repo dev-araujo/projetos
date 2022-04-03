@@ -1,2 +1,43 @@
 @import url(./styles/reset.scss);
-@import url(./styles/global.scss);
+@import url(./styles/variables.scss);
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-scrollbar);
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--color-scrollbar);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+}
+
+::selection {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+@mixin title {
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: 1px;
+}
+
+
+
+h1 {
+  @include title;
+  font-family: var(--font-title);
+  font-size: var(--font-size-1);
+
+  span {
+    @include title;
+    font-family: var(--font-special);
+    font-size: var(--font-size-1);
+  }
+}
+
+h2 {
+  @include title;
+  font-size: var(--font-size-2);
+}

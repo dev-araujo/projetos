@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,14 +11,26 @@ import { SidenavModalComponent } from './components/sidenav-modal/sidenav-modal.
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContainerComponent } from './layout/container/container.component';
+import { HeaderComponent } from './components/left-sidebar/header/header.component';
+import { MenuComponent } from './components/left-sidebar/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent, SearchComponent, SidenavModalComponent, HomeComponent, SidebarComponent, ContainerComponent],
+  declarations: [
+    AppComponent,
+    SearchComponent,
+    SidenavModalComponent,
+    HomeComponent,
+    SidebarComponent,
+    ContainerComponent,
+    HeaderComponent,
+    MenuComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

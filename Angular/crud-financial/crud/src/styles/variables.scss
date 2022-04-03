@@ -10,9 +10,13 @@
 
 :root {
   --color-primary: #5fb670;
+  --color-primary-dark: #4b744d;
   --color-white: white;
   --color-dark: rgb(17, 17, 17);
   --color-light-gray: rgba(223, 223, 225, 0.176);
+
+  --color-scrollbar: #f4f4f4;
+  --color-scrollbar-thumb: #dad7d7;
 
   --font-title: "Montserrat", sans-serif;
   --font-default: "Poppins", sans-serif;
@@ -20,18 +24,14 @@
   --font-special-2: "Roboto", sans-serif;
 
   --font-size-default: 16px;
-  --font-size-1: 24px;
+  --font-size-0: 13px;
+  --font-size-1: 26px;
+  --font-size-2: 20px;
+
+ 
 }
 
 * {
   font-family: var(--font-default);
   font-size: var(--font-size-default);
-}
-
-.title-1 {
-  font-family: var(--font-title);
-  font-weight: 600;
-  color:var(--color-white);
-  font-size:var(--font-size-1);
-  letter-spacing: 1px;
 }

@@ -1,5 +1,4 @@
-import { Component, OnInit,Input } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -8,7 +7,12 @@ import { Component, OnInit,Input } from '@angular/core';
 export class SidebarComponent implements OnInit {
   @Input() position: string | any;
 
+ 
   constructor() {}
 
   ngOnInit(): void {}
+
+  getClientData() {}
+
+
 }

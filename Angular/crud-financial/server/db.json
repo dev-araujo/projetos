@@ -1,11 +1,9 @@
 {
-    "user": [
-        {
-            "name": "Araujo",
-            "email": "araujo_ir@yahoo.com",
-            "photo": "https://avatars.githubusercontent.com/u/97068163?v=4"
-        }
-    ],
+    "user": {
+        "name": "Pereira Araujo",
+        "email": "araujo_ir@yahoo.com",
+        "photo": "https://avatars.githubusercontent.com/u/97068163?v=4"
+    },
     "transactions": [
         {
             "id": 1,

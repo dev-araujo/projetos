@@ -1,16 +1,23 @@
 :host {
-  .sidebar {
-    width: 16vw;
-    height: 100%;
-    padding-top:4rem;
-
-    display:flex;
+  @mixin flex-default {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .left{
-    background:var(--color-primary);
+  @mixin margin-default {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
- 
+  .sidebar {
+    @include flex-default;
+    width: 16vw;
+    height: 100%;
+    padding-top: 3rem;
+  }
+
+  .left {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
 }

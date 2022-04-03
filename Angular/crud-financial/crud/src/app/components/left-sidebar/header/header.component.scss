@@ -1,0 +1,44 @@
+:host {
+  .header {
+    @mixin flex-default {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @mixin margin-default {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    @include flex-default;
+
+    h1 {
+      @include margin-default;
+    }
+
+    figure {
+      @include flex-default;
+      background: url(../../../../assets/dots.svg);
+      width: 10rem;
+      background-size: 100%;
+      background-position: 2rem -3rem;
+      background-repeat: no-repeat;
+    }
+
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+    }
+
+    h2 {
+      @include margin-default;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-weight: 200;
+      font-size: var(--font-size-0);
+    }
+  }
+}
