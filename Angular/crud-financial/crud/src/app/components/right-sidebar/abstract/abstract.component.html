@@ -1,0 +1,13 @@
+<section *ngFor="let info of transactions">
+  <app-cards
+    [character]="info?.title[0].toUpperCase()"
+    [title]="info?.title"
+    [category]="info?.category"
+    [amount]="
+      info?.amount.toLocaleString('pt-br', {
+        style: 'currency',
+        currency: 'BRL'
+      })
+    "
+  ></app-cards>
+</section>

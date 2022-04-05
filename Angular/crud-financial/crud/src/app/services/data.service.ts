@@ -14,4 +14,10 @@ export class DataService {
   get user(): Observable<any> {
     return this.api.get<any>(`${this.baseUrl}/user`).pipe(tap((res) => res));
   }
+
+  get abstract(): Observable<any> {
+    return this.api
+      .get<any>(`${this.baseUrl}/transactions`)
+      .pipe(tap((res) => res));
+  }
 }

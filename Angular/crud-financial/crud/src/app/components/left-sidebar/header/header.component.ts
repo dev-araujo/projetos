@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { DataService } from '../../../services/data.service';
 
 @Component({
   selector: 'app-header',
@@ -16,8 +16,6 @@ export class HeaderComponent implements OnInit {
   }
 
   getClientData() {
-    this.service.user.subscribe((res) => {
-      this.client = res;
-    });
+    this.service.user.subscribe((res) => (this.client = res));
   }
 }

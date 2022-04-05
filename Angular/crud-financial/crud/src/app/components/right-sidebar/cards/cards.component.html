@@ -1,0 +1,12 @@
+<article class="card">
+  <figure>{{ character }}</figure>
+  <div class="card__title">
+    <h2 [ngStyle]="{ color: category === 'entrada' ? 'green' : 'red' }">
+      {{ category }}
+    </h2>
+    <p class="card__type">{{ title }}</p>
+  </div>
+  <div class="card__value">
+    <h2>{{ amount }}</h2>
+  </div>
+</article>

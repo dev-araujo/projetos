@@ -13,6 +13,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContainerComponent } from './layout/container/container.component';
 import { HeaderComponent } from './components/left-sidebar/header/header.component';
 import { MenuComponent } from './components/left-sidebar/menu/menu.component';
+import { AbstractComponent } from './components/right-sidebar/abstract/abstract.component';
+import { CardsComponent } from './components/right-sidebar/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { MenuComponent } from './components/left-sidebar/menu/menu.component';
     ContainerComponent,
     HeaderComponent,
     MenuComponent,
+    AbstractComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+:host {
+  @mixin flex-default {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    background: var(--color-white);
+    @include flex-default;
+    width: 100%;
+    height: 2.7rem;
+    padding: 0.5rem;
+    border-radius: 6%;
+    box-shadow: 7px 8px 26px 5px var(--color-scrollbar);
+
+    figure {
+      background: var(--color-scrollbar-thumb);
+      height: 3rem;
+      width: 3rem;
+      border-radius: 1rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title,
+    &__value {
+      height: 2.7rem;
+      width:4rem;
+    }
+    &__type {
+      font-size: var(--font-size-0);
+      font-weight: 300;
+      padding-top: 0.3rem;
+    }
+  }
+}
