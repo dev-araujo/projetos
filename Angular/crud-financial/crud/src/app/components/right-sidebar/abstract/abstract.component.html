@@ -1,3 +1,6 @@
+<header>
+  <app-search (emmitSearch)="getSearch($event)"></app-search>
+</header>
 <section *ngFor="let info of transactions">
   <app-cards
     [character]="info?.title[0].toUpperCase()"

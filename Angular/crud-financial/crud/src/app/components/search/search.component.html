@@ -1,6 +1,5 @@
 <form>
   <img src="assets/search.svg" alt="lupa" />
-  <input #input type="text" placeholder="Search..." />
+  <input #input (keyup)="searching(input.value)" type="text" placeholder="Search..." />
 </form>
 
-<!-- #input (keyup)="search(input.value)" -->

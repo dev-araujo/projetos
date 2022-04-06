@@ -5,6 +5,8 @@
     justify-content: space-between;
   }
   .card {
+    animation: show-card 3s ease 0s 1 normal forwards;
+
     background: var(--color-white);
     @include flex-default;
     width: 100%;
@@ -27,12 +29,21 @@
     &__title,
     &__value {
       height: 2.7rem;
-      width:4rem;
+      width: 4rem;
     }
     &__type {
       font-size: var(--font-size-0);
       font-weight: 300;
       padding-top: 0.3rem;
+    }
+  }
+  @keyframes show-card {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
     }
   }
 }

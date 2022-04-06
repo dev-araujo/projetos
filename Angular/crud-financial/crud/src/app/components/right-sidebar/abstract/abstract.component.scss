@@ -1,11 +1,13 @@
-:host{
-  section{
-    width:100%;
-    height:40%;
+:host {
+  header {
+    margin-bottom: 1.5rem;
+  }
+  section {
+    width: 100%;
+    height: 40%;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-
   }
 }
