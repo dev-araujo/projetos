@@ -7,6 +7,7 @@
   .card {
     animation: show-card 3s ease 0s 1 normal forwards;
 
+    margin-top: 1rem;
     background: var(--color-white);
     @include flex-default;
     width: 100%;

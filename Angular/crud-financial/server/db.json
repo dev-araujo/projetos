@@ -28,6 +28,30 @@
             "category": "entrada",
             "amount": 600,
             "date": "15/12/21"
+        },
+        {
+            "id": 1,
+            "title": "guanabara",
+            "type": "compra",
+            "category": "saida",
+            "amount": 200,
+            "date": "15/12/21"
+        },
+        {
+            "id": 2,
+            "title": "ração",
+            "type": "compra",
+            "category": "saida",
+            "amount": 50,
+            "date": "15/12/21"
+        },
+        {
+            "id": 3,
+            "title": "aposentadoria",
+            "type": "poupança",
+            "category": "entrada",
+            "amount": 600,
+            "date": "15/12/21"
         }
     ]
 }

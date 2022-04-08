@@ -9,6 +9,8 @@ import { DataService } from '../../../services/data.service';
 export class AbstractComponent implements OnInit {
   public transactions: any;
   public setTransactions: any;
+  public inputLength: number = 0;
+
   constructor(public service: DataService) {}
 
   ngOnInit(): void {
@@ -32,7 +34,9 @@ export class AbstractComponent implements OnInit {
         res.date.toLowerCase().includes(value.toLocaleLowerCase())
       );
     });
-
+    value.length > 0
+      ? (this.inputLength = value?.length)
+      : (this.inputLength = 0);
     this.transactions = filterTransactions;
   }
 }

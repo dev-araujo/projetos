@@ -2,7 +2,9 @@
   <section>
     <app-sidebar class="sidebar-left" [position]="'left'"></app-sidebar>
   </section>
-  <section class="content"></section>
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
   <section>
     <app-sidebar class="sidebar-right" [position]="'right'"></app-sidebar>
   </section>

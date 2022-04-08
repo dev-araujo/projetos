@@ -10,14 +10,15 @@
     margin-bottom: 1rem;
   }
   .sidebar {
-    @include flex-default;
     width: 16vw;
     height: 100%;
     padding-top: 3rem;
   }
 
   .left {
+    @include flex-default;
     background: var(--color-primary);
     color: var(--color-white);
   }
+  
 }

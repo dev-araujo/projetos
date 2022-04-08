@@ -9,7 +9,8 @@ export class CardsComponent implements OnInit {
   @Input() character: string | any;
   @Input() title: string | any;
   @Input() category: string | any;
-  @Input() amount: number | any
+  @Input() amount: number | any;
+ 
 
   constructor() {}
 
