@@ -1,1 +1,17 @@
-<div echarts [options]="options" [merge]="updateOptions" class="demo-chart"></div>
+<section class="dashboard">
+  <section class="dashboard__content">
+    <div class="dashboard__header"><h1>Overview</h1></div>
+    <div class="dashboard__card">
+      <app-card-dashboard
+        [icon]="'withdrawal'"
+        [title]="'Entradas'"
+        [amount]="totalWithdrawal"
+      ></app-card-dashboard>
+      <app-card-dashboard
+        [icon]="'deposit'"
+        [title]="'Saídas'"
+        [amount]="totalDeposit"
+      ></app-card-dashboard>
+    </div>
+  </section>
+</section>

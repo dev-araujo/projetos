@@ -1,0 +1,23 @@
+<section class="card">
+  <header>
+    <i
+      *ngIf="icon === 'deposit'"
+      class="entered bi bi-arrow-up-right-circle-fill"
+    ></i>
+    <i
+      *ngIf="icon === 'withdrawal'"
+      class="exit bi bi-arrow-down-right-circle-fill"
+    ></i>
+    <h3>{{ title }}</h3>
+  </header>
+  <div>
+    <h1>
+      {{
+        amount.toLocaleString("pt-br", {
+          style: "currency",
+          currency: "BRL"
+        })
+      }}
+    </h1>
+  </div>
+</section>

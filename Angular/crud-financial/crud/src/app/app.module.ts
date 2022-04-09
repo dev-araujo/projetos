@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { NgxEchartsModule } from 'ngx-echarts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +17,7 @@ import { AbstractComponent } from './components/right-sidebar/abstract/abstract.
 import { CardsComponent } from './components/right-sidebar/cards/cards.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { CardDashboardComponent } from './components/card-dashboard/card-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +33,7 @@ import { DetailsComponent } from './pages/details/details.component';
     CardsComponent,
     DashboardComponent,
     DetailsComponent,
+    CardDashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,9 +41,6 @@ import { DetailsComponent } from './pages/details/details.component';
     MatButtonModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgxEchartsModule.forRoot({
-      echarts: () => import('echarts'),
-    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

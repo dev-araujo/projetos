@@ -1,4 +1,5 @@
 :host {
+ 
   form {
     width: 10rem;
     height: 14px;
@@ -20,6 +21,6 @@
     &::placeholder {
       font-family: var(--font-special);
     }
-   
+
   }
 }

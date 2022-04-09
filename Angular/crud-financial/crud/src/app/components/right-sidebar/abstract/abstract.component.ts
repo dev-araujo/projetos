@@ -19,8 +19,8 @@ export class AbstractComponent implements OnInit {
 
   getTransactions() {
     this.service.abstract.subscribe((res) => {
-      this.transactions = res;
-      this.setTransactions = res;
+      this.transactions = res
+      this.setTransactions = res
     });
   }
 

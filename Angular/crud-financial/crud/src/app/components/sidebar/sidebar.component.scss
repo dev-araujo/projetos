@@ -11,7 +11,7 @@
   }
   .sidebar {
     width: 16vw;
-    height: 100%;
+    height: 100vh;
     padding-top: 3rem;
   }
 
@@ -20,5 +20,9 @@
     background: var(--color-primary);
     color: var(--color-white);
   }
-  
+  .right {
+    width: 18vw;
+    overflow-y: auto;
+
+  }
 }

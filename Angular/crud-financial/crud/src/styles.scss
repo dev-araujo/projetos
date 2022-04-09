@@ -27,17 +27,17 @@
   h1 {
     @include title;
     font-family: var(--font-title);
-    font-size: var(--font-size-1);
+    font-size: var(--font-size-2);
 
     span {
       @include title;
       font-family: var(--font-special);
-      font-size: var(--font-size-1);
+      font-size: var(--font-size-2);
     }
   }
 
   h2 {
     @include title;
-    font-size: var(--font-size-2);
+    font-size: var(--font-size-1);
   }
 }

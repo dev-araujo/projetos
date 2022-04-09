@@ -1,0 +1,30 @@
+:host {
+  .card {
+    width: 14rem;
+    height: 6rem;
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 10%;
+
+    header {
+      display: flex;
+
+      h3 {
+        margin-left: 1rem;
+      }
+    }
+    div {
+      margin-top: 2rem;
+      h1 {
+        font-size: var(--font-size-1);
+        font-weight: 600;
+      }
+    }
+  }
+  .entered {
+    color: var(--color-danger);
+  }
+  .exit {
+    color: var(--color-primary-dark);
+  }
+}
