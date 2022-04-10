@@ -18,6 +18,7 @@ import { CardsComponent } from './components/right-sidebar/cards/cards.component
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { CardDashboardComponent } from './components/card-dashboard/card-dashboard.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CardDashboardComponent } from './components/card-dashboard/card-dashboa
     MatButtonModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgApexchartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

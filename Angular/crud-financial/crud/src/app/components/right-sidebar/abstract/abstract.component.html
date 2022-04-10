@@ -1,7 +1,7 @@
 <header>
   <app-search (emmitSearch)="getSearch($event)"></app-search>
 </header>
-<section *ngFor="let info of transactions">
+<section *ngFor="let info of transactions" class="abstract__container">
   <div [routerLink]="['details']">
     <app-cards
       [character]="info?.title[0].toUpperCase()"

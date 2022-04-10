@@ -2,14 +2,14 @@
 @import url(./styles/variables.scss);
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color-scrollbar);
+  background-color: transparent;
 }
 ::-webkit-scrollbar {
   width: 6px;
-  background: var(--color-scrollbar);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-scrollbar-thumb);
+  background: transparent;
 }
 
 ::selection {

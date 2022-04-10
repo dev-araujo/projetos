@@ -15,11 +15,16 @@
       padding: 3rem;
       width: 80%;
       height: 100%;
+
     }
     &__card {
       width: 80%;
       display: flex;
       justify-content: space-between;
     }
+  }
+
+  #chart{
+    width:100%;
   }
 }

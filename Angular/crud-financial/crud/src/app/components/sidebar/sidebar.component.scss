@@ -11,7 +11,7 @@
   }
   .sidebar {
     width: 16vw;
-    height: 100vh;
+    height: 100%;
     padding-top: 3rem;
   }
 
@@ -22,7 +22,20 @@
   }
   .right {
     width: 18vw;
-    overflow-y: auto;
+    
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
 
+    ::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
   }
 }
