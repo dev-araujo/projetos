@@ -13,17 +13,8 @@
         [amount]="totalDeposit"
       ></app-card-dashboard>
     </div>
+    <div class="dashboard__chart">
+      <app-chart></app-chart>
+    </div>
   </section>
-
-  <div id="chart">
-  <apx-chart
-    [series]="chartOptions.series"
-    [chart]="chartOptions.chart"
-    [xaxis]="chartOptions.xaxis"
-    [dataLabels]="chartOptions.dataLabels"
-    [grid]="chartOptions.grid"
-    [stroke]="chartOptions.stroke"
-    [title]="chartOptions.title"
-  ></apx-chart>
-</div>
 </section>

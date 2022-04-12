@@ -19,6 +19,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DetailsComponent } from './pages/details/details.component';
 import { CardDashboardComponent } from './components/card-dashboard/card-dashboard.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
+import { ChartsComponent } from './components/chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NgApexchartsModule } from 'ng-apexcharts';
     DashboardComponent,
     DetailsComponent,
     CardDashboardComponent,
+    ChartsComponent,
   ],
   imports: [
     BrowserModule,

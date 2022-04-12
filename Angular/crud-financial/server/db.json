@@ -11,7 +11,7 @@
             "type": "compra",
             "category": "saida",
             "amount": 200,
-            "date": "15/12/21"
+            "date": "15/01/21"
         },
         {
             "id": 2,
@@ -19,6 +19,54 @@
             "type": "compra",
             "category": "saida",
             "amount": 50,
+            "date": "15/01/21"
+        },
+        {
+            "id": 3,
+            "title": "aposentadoria",
+            "type": "poupança",
+            "category": "entrada",
+            "amount": 60,
+            "date": "15/04/21"
+        },
+        {
+            "id": 1,
+            "title": "guanabara",
+            "type": "compra",
+            "category": "saida",
+            "amount": 250,
+            "date": "18/05/21"
+        },
+        {
+            "id": 2,
+            "title": "ração",
+            "type": "compra",
+            "category": "saida",
+            "amount": 501,
+            "date": "15/07/21"
+        },
+        {
+            "id": 3,
+            "title": "aposentadoria",
+            "type": "poupança",
+            "category": "entrada",
+            "amount": 320,
+            "date": "15/04/21"
+        },
+        {
+            "id": 1,
+            "title": "guanabara",
+            "type": "compra",
+            "category": "saida",
+            "amount": 225,
+            "date": "15/12/21"
+        },
+        {
+            "id": 2,
+            "title": "ração",
+            "type": "compra",
+            "category": "saida",
+            "amount": 325,
             "date": "15/12/21"
         },
         {
@@ -26,7 +74,7 @@
             "title": "aposentadoria",
             "type": "poupança",
             "category": "entrada",
-            "amount": 600,
+            "amount": 780,
             "date": "15/12/21"
         },
         {
@@ -34,7 +82,7 @@
             "title": "guanabara",
             "type": "compra",
             "category": "saida",
-            "amount": 200,
+            "amount": 205,
             "date": "15/12/21"
         },
         {
@@ -42,7 +90,7 @@
             "title": "ração",
             "type": "compra",
             "category": "saida",
-            "amount": 50,
+            "amount": 85,
             "date": "15/12/21"
         },
         {
@@ -50,55 +98,7 @@
             "title": "aposentadoria",
             "type": "poupança",
             "category": "entrada",
-            "amount": 600,
-            "date": "15/12/21"
-        },
-        {
-            "id": 1,
-            "title": "guanabara",
-            "type": "compra",
-            "category": "saida",
-            "amount": 200,
-            "date": "15/12/21"
-        },
-        {
-            "id": 2,
-            "title": "ração",
-            "type": "compra",
-            "category": "saida",
-            "amount": 50,
-            "date": "15/12/21"
-        },
-        {
-            "id": 3,
-            "title": "aposentadoria",
-            "type": "poupança",
-            "category": "entrada",
-            "amount": 600,
-            "date": "15/12/21"
-        },
-        {
-            "id": 1,
-            "title": "guanabara",
-            "type": "compra",
-            "category": "saida",
-            "amount": 200,
-            "date": "15/12/21"
-        },
-        {
-            "id": 2,
-            "title": "ração",
-            "type": "compra",
-            "category": "saida",
-            "amount": 50,
-            "date": "15/12/21"
-        },
-        {
-            "id": 3,
-            "title": "aposentadoria",
-            "type": "poupança",
-            "category": "entrada",
-            "amount": 600,
+            "amount": 985,
             "date": "15/12/21"
         }
     ]
