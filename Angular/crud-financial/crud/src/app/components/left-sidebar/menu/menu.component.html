@@ -1,8 +1,8 @@
 <nav class="menu">
   <h2>menu</h2>
   <ul>
-    <li [class]="isMenuSelected[0].selected" (click)="selectedActive(1)">
-      Dashboard
+    <li [routerLink]='["new"]' [class]="isMenuSelected[0].selected" (click)="selectedActive(1)">
+      Novo
     </li>
     <li [class]="isMenuSelected[1].selected" (click)="selectedActive(2)">
       grid
