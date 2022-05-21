@@ -1,12 +1,4 @@
-$(document).ready(function () {
-  $("#jtimeline-demo").jTimeline({
-    resolution: 20000,
-    minimumSpacing: 500,
-    step: 500,
-    leftArrow: "<",
-    rightArrow: ">",
-  });
-});
+
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
