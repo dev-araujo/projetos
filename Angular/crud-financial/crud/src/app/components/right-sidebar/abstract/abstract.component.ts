@@ -38,5 +38,9 @@ export class AbstractComponent implements OnInit {
       ? (this.inputLength = value?.length)
       : (this.inputLength = 0);
     this.transactions = filterTransactions;
+
+
   }
+
+
 }
