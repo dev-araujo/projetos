@@ -1,19 +1,30 @@
-.table {
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: #c5c3c3;
+
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.line {
+.board {
   display: flex;
-  flex-direction: row;
+  width: 340px;
+  flex-wrap: wrap;
 }
-.place {
+.cell {
   width: 100px;
   height: 100px;
+  border-radius: 5px;
+  background-color: white;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin: 2px;
+
   cursor: pointer;
-  font-size: 60;
-  border: 1px solid #000;
 }

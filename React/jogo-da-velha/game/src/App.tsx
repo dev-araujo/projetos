@@ -1,39 +1,35 @@
 import { useState } from "react";
 import "./App.css";
 
-function App() {
-  const initialGame: Array<Array<string>> = [
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-  ];
-  const [game, setGame] = useState(initialGame);
-  const [start, setStart] = useState<String>("X");
-  const [isPlay, setIsPlae] = useState<Boolean>(true);
+type Player = "O" | "X";
 
-  const gameTable = (play: any) => {
-    return (
-      <section className="table">
-        <article className="line">
-          <div className="place">{play[0][0]}</div>
-          <div className="place">{play[0][1]}</div>
-          <div className="place">{play[0][2]}</div>
-        </article>
-        <article className="line">
-          <div className="place">{play[1][0]}</div>
-          <div className="place">{play[1][1]}</div>
-          <div className="place">{play[1][2]}</div>
-        </article>
-        <article className="line">
-          <div className="place">{play[2][0]}</div>
-          <div className="place">{play[2][1]}</div>
-          <div className="place">{play[2][2]}</div>
-        </article>
-      </section>
-    );
+function App() {
+  const [turn, setTurn] = useState<Player>("O");
+  const [winner, setWinner] = useState<Player | null>(null);
+  const [isTie, setIsTie] = useState<boolean | null>(null);
+
+  const [mark, setMark] = useState<{ [key: string]: Player }>({});
+
+  const getSquare = (many: number) => {
+    return new Array(many).fill(true);
   };
 
-  return <section>{gameTable(initialGame)}</section>;
+  const play = (index: number) => {
+    setMark((prev) => ({ ...prev, [index]: turn }));
+    setTurn((prev) => (prev === "O" ? "X" : "O"));
+  };
+
+  return (
+    <section className="container">
+      <section className="board">
+        {getSquare(9).map((_, i) => (
+          <article className={`cell`} onClick={() => play(i)}>
+            {mark[i]}
+          </article>
+        ))}
+      </section>
+    </section>
+  );
 }
 
 export default App;
