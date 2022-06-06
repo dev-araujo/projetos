@@ -19,11 +19,22 @@ function App() {
     setTurn((prev) => (prev === "O" ? "X" : "O"));
   };
 
+  const getCellPlayer = (index: number) => {
+    if (!mark[index]) {
+      return;
+    }
+
+    return mark[index];
+  };
+
   return (
     <section className="container">
       <section className="board">
         {getSquare(9).map((_, i) => (
-          <article className={`cell`} onClick={() => play(i)}>
+          <article
+            className={`cell ${getCellPlayer(i)}`}
+            onClick={() => play(i)}
+          >
             {mark[i]}
           </article>
         ))}
