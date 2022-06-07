@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 
 type Player = "O" | "X";
@@ -27,8 +27,35 @@ function App() {
     return mark[index];
   };
 
+  const getWinner = () => {
+    const linesForVictory = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+      [0, 3, 6],
+      [2, 5, 7],
+      [2, 5, 8],
+    ];
+    for (const line of linesForVictory) {
+      const [a, b, c] = line;
+      if (mark[a] && mark[a] === mark[b] && mark[a] === mark[c]) {
+        return mark[a];
+      }
+    }
+  };
+
+  useEffect(() => {
+    const winner = getWinner();
+
+    if (winner) setWinner(winner);
+  }, [mark]);
+
   return (
     <section className="container">
+      {winner && <h1>O usuário {winner.toUpperCase()} ganhou</h1>}
+      <button onClick={() => setMark({})}>Novo Jogo</button>
       <section className="board">
         {getSquare(9).map((_, i) => (
           <article
