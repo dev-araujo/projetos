@@ -9,6 +9,7 @@ function App() {
   const [isTie, setIsTie] = useState<boolean | null>(null);
 
   const [mark, setMark] = useState<{ [key: string]: Player }>({});
+  const gameOver = !!winner || !!isTie;
 
   const getSquare = (many: number) => {
     return new Array(many).fill(true);
@@ -46,6 +47,12 @@ function App() {
     }
   };
 
+  const reset = () => {
+    setMark({});
+    setWinner(null);
+    setIsTie(null);
+  };
+
   useEffect(() => {
     const winner = getWinner();
 
@@ -55,7 +62,8 @@ function App() {
   return (
     <section className="container">
       {winner && <h1>O usuário {winner.toUpperCase()} ganhou</h1>}
-      <button onClick={() => setMark({})}>Novo Jogo</button>
+      {!gameOver && <p>É a vez do {turn}</p>}
+      {gameOver && <button onClick={() => reset()}>Novo Jogo</button>}
       <section className="board">
         {getSquare(9).map((_, i) => (
           <article
