@@ -1,0 +1,1 @@
+type Player = "O" | "X";
