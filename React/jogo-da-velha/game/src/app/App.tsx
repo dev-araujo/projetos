@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getSquare, getCellPlayer, getWinner } from "../utils/index";
-import { PlayerWinner } from "./components";
+import { PlayerWinner, PlayerTurn, GameBoard } from "./components";
 
 import "./App.css";
 
@@ -35,18 +35,13 @@ function App() {
   return (
     <section className="container">
       <PlayerWinner isWinner={winner} />
-      {!gameOver && <p>É a vez do {turn}</p>}
-      {gameOver && <button onClick={() => reset()}>Novo Jogo</button>}
-      <section className="board">
-        {getSquare(9).map((_, i) => (
-          <article
-            className={`cell ${getCellPlayer(i, mark)}`}
-            onClick={() => play(i)}
-          >
-            {mark[i]}
-          </article>
-        ))}
-      </section>
+      <PlayerTurn gameOver={gameOver} turn={turn} reset={() => reset()} />
+      <GameBoard
+        drawBoard={getSquare}
+        cell={getCellPlayer}
+        play={play}
+        mark={mark}
+      />
     </section>
   );
 }

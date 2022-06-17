@@ -1,3 +1,5 @@
 import PlayerWinner from "./PlayerWinner";
+import PlayerTurn from "./PlayerTurn";
+import GameBoard from "./GameBoard";
 
-export {PlayerWinner}
+export {PlayerWinner,PlayerTurn,GameBoard}
