@@ -12,6 +12,7 @@ function Options() {
   const { isMatch, setIsMatch } = useContext(Context);
 
   const loadNew = () => {
+    setIsMatch([]);
     return getIsMatch(setIsMatch);
   };
 
@@ -24,8 +25,9 @@ function Options() {
   };
 
   const match = () => {
-    loadNew();
+    setIsMatch([]);
     ohYeah();
+    loadNew();
   };
   return (
     <S.Container>

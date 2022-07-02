@@ -10,7 +10,7 @@ const Content = () => {
 
   return (
     <S.Container>
-      {isMatch !== "" ? (
+      {isMatch.length !== 0 ? (
         <>
           <img src={isMatch.photo} alt={"isMatch"} />
 

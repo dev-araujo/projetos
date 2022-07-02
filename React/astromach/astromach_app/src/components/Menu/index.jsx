@@ -21,7 +21,7 @@ function Menu() {
   return (
     <S.Container>
       <S.ClearMatchesButton onClick={cleanMatches}>
-        {changeView ? "Limpar" : "..."}
+        {changeView ? "Limpar" : " "}
       </S.ClearMatchesButton>
       <S.LogoImage src={Logo} alt={"logo"} />
       <S.MatchesButton onClick={change}>
