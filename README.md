@@ -5,7 +5,7 @@
 
 **<details><summary>Projetos Vanilla🍦</summary>**
   
- - [**Portfólio**](https://github.com/dev-araujo/projetos/tree/main/Vanilla/portfolio/vanilla) 
+ - [**Portfólio**](https://github.com/dev-araujo/projetos/tree/main/Vanilla/portfolio) 
 
 </details>
 
