@@ -9,20 +9,20 @@
     "id": 2,
     "name": "velha",
     "url": "https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs",
-    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/velha.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/velha.png?raw=true"
   },
   {
     "id": 3,
     "name": "vemnimim",
     "url": "https://github.com/dev-araujo/tarot",
-    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/VEMNIMIM.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/VEMNIMIM.png?raw=true"
   },
  
   {
     "id": 4,
     "name": "Chuck",
     "url": "https://github.com/dev-araujo/desafios/blob/main/React/brlogic/README.md",
-    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/CHUCK.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/CHUCK.png?raw=true"
   },
   {
     "id": 5,
@@ -34,6 +34,6 @@
     "id": 6,
     "name": "restaurante",
     "url": "https://github.com/dev-araujo/tarot",
-    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/PROJETO%20RESTAURANTE.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/PROJETO%20RESTAURANTE.png?raw=true"
   }
 ]
