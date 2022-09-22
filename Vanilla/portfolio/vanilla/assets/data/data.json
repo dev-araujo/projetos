@@ -1,21 +1,39 @@
 [
+  {
+    "id": 1,
+    "name": "quotes",
+    "url": "https://github.com/dev-araujo/desafios/blob/main/React/brlogic/README.md",
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/RANDOM%20QUOTES%20MACHINE.png"
+  },
+  {
+    "id": 2,
+    "name": "velha",
+    "url": "https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs",
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/velha.png"
+  },
+  {
+    "id": 3,
+    "name": "vemnimim",
+    "url": "https://github.com/dev-araujo/tarot",
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/VEMNIMIM.png"
+  },
  
   {
     "id": 4,
-    "name": "BRLOGIC",
+    "name": "Chuck",
     "url": "https://github.com/dev-araujo/desafios/blob/main/React/brlogic/README.md",
-    "image": "https://user-images.githubusercontent.com/97068163/149625085-1fc6c49c-c14b-45ac-aebf-eb3e71699d75.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/CHUCK.png"
   },
   {
     "id": 5,
     "name": "Pokedex-rxjs",
     "url": "https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs",
-    "image": "https://user-images.githubusercontent.com/97068163/154776838-cd4790ed-88be-4a8e-95b2-40d5df0ef63d.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/POKEDEX%20REACT+RXJS.png"
   },
   {
     "id": 6,
-    "name": "Tarot",
+    "name": "restaurante",
     "url": "https://github.com/dev-araujo/tarot",
-    "image": "https://user-images.githubusercontent.com/97068163/156898220-b505cfd1-e44f-4e12-ac64-4ff2d38ac998.png"
+    "image": "https://github.com/dev-araujo/projetos/blob/main/Vanilla/portfolio/vanilla/assets/images/projects/react/PROJETO%20RESTAURANTE.png"
   }
 ]
