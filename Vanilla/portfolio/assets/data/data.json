@@ -17,23 +17,5 @@
     "name": "Tarot",
     "url": "https://github.com/dev-araujo/tarot",
     "image": "https://user-images.githubusercontent.com/97068163/156898220-b505cfd1-e44f-4e12-ac64-4ff2d38ac998.png"
-  },
-    {
-    "id": 1,
-    "name": "pokedex-angular",
-    "url": "https://github.com/dev-araujo/projetos/tree/main/Angular/pokedex-angular",
-    "image": "https://user-images.githubusercontent.com/97068163/151001628-9465160c-01e8-4a34-88b0-8a5000156a1f.png"
-  },
-  {
-    "id": 2,
-    "name": "chat-web3",
-    "url": "https://github.com/dev-araujo/blockchain/tree/main/chat-web3",
-    "image": "https://user-images.githubusercontent.com/97068163/185650309-fa7190d2-98f2-4352-a5bf-587bed05fe7c.png"
-  },
-  {
-    "id": 3,
-    "name": "Tarot",
-    "url": "https://github.com/dev-araujo/projetos/tree/main/React/chuck-jokes",
-    "image": "https://user-images.githubusercontent.com/97068163/149026115-487b8728-abc3-42e0-90fe-507c68348cd6.png"
   }
 ]
