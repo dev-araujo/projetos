@@ -1,0 +1,19 @@
+<main (click)="go()">
+  <section class="board">
+    <figure>
+      <img
+        class="board__player"
+        [ngClass]="isJump ? 'board__jump' : ''"
+        src="../assets/sonic.gif"
+        alt="player"
+      />
+    </figure>
+    <figure>
+      <img
+        class="board__obstacle"
+        src="../assets/obstacle.png"
+        alt="obstacle"
+      />
+    </figure>
+  </section>
+</main>
