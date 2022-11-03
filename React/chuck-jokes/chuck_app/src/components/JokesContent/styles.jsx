@@ -17,6 +17,8 @@ export const Container = styled.section`
 
     @media (max-width: 490px) {
       width: 10rem;
+      display:block;
+      margin:auto;
     }
   }
   .visible {
@@ -36,8 +38,7 @@ export const Container = styled.section`
   @media (max-width: 490px) {
     border-radius: 0;
     width: 91%;
-
-    height: 20rem;
+    display:block;
     
   }
 `;
