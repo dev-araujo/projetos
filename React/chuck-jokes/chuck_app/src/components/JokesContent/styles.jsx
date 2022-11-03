@@ -36,6 +36,9 @@ export const Container = styled.section`
   @media (max-width: 490px) {
     border-radius: 0;
     width: 91%;
+
+    height: 20rem;
+    
   }
 `;
 
@@ -43,4 +46,6 @@ export const List = styled.li`
   background: none;
   margin-top: 1rem;
   color: #7a3004;
+
+  
 `;

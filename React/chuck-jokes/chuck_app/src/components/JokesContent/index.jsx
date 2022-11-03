@@ -25,7 +25,7 @@ function JokesContent() {
 
   return (
     <S.Container>
-      {search.length > 0 ? jokeSearchedList : <S.List>{jokes}</S.List>}
+      {search.length > 0 ? jokeSearchedList : {jokes}}
       <img className={isVisible} src={ChuckLogo} alt={"logo"} />
     </S.Container>
   );
