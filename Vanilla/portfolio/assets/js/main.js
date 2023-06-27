@@ -95,8 +95,6 @@ delayEffect.reveal(".contact__input", { interval: 200 });
 
 function changeTheme() {
   const root = document.querySelector("body");
-  const icons = document.querySelector("bxl-codepen");
 
   root.classList.toggle("dark");
-  icons.classList.toggle("dark");
 }
