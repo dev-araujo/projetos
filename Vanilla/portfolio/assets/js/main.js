@@ -1,5 +1,3 @@
-
-
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -58,42 +56,42 @@ delayEffect.reveal(".work__img", { interval: 200 });
 /*SCROLL CONTACT*/
 delayEffect.reveal(".contact__input", { interval: 200 });
 
-const getApi = (url) => {
-  let request = new XMLHttpRequest();
-  request.open("GET", url, false);
-  request.send();
-  return request.responseText;
-};
+// const getApi = (url) => {
+//   let request = new XMLHttpRequest();
+//   request.open("GET", url, false);
+//   request.send();
+//   return request.responseText;
+// };
 
-const createDiv = (data) => {
-  let div = document.createElement("div");
-  div.classList.add("work__img");
-  let link = document.createElement("a");
-  link.target = "_blank";
-  let image = document.createElement("img");
+// const createDiv = (data) => {
+//   let div = document.createElement("div");
+//   div.classList.add("work__img");
+//   let link = document.createElement("a");
+//   link.target = "_blank";
+//   let image = document.createElement("img");
 
-  link.href = data.url;
-  image.src = data.image;
+//   link.href = data.url;
+//   image.src = data.image;
 
-  link.appendChild(image);
-  div.appendChild(link);
+//   link.appendChild(image);
+//   div.appendChild(link);
 
-  return div;
-};
-/*DATA*/
-const main = () => {
-  let data = getApi("./assets/data/data.json");
-  let projects = JSON.parse(data);
+//   return div;
+// };
+// /*DATA*/
+// const main = () => {
+//   let data = getApi("./assets/data/data.json");
+//   let projects = JSON.parse(data);
 
-  let container = document.querySelector(".work__container");
+//   let container = document.querySelector(".work__container");
 
-  projects.forEach((element) => {
-    let div = createDiv(element);
-    container.appendChild(div);
-  });
-};
+//   projects.forEach((element) => {
+//     let div = createDiv(element);
+//     container.appendChild(div);
+//   });
+// };
 
-main();
+// main();
 
 function changeTheme() {
   const root = document.querySelector("body");

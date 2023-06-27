@@ -1,320 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/styles/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!-- =====BOOTSTRAP===== -->
 
-    <link
-      rel="shortcut icon"
-      type="imagex/png"
-      href="./assets/images/iconabout.ico"
-    />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <title>Araujo</title>
-  </head>
+  <!-- =====BOX ICONS===== -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo">Adriano</a>
-          <span id="iconTheme" onclick="changeTheme()">
-            <i class="bx bx-sun"></i>
-          </span>
-        </div>
+  <link rel="shortcut icon" type="imagex/png" href="./assets/images/iconabout.ico" />
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">Sobre</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Habilidades</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Projetos</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contato</a>
-            </li>
-          </ul>
-        </div>
+  <title>Araujo</title>
+</head>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Olá,<br />Sou <span class="home__title-color">Adriano</span><br />
-            Dev. <u class="home__underline-color">Front-end</u>
-          </h1>
-
-          <a href="#contact" id="button-contact" class="button">Contato</a>
-        </div>
-
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/araujocode/"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://www.hackerrank.com/araujo6_6"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bx-terminal"></i
-          ></a>
-          <a
-            href="https://github.com/dev-araujo"
-            target="_blank"
-            class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-
-        <div class="home__img">
-          <img
-            class="home__img--border"
-            src="assets/images/perfil.png"
-            alt="foto de perfil"
-          />
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">Sobre</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/images/about2.png" alt="" />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">Meu nome é Adriano</h2>
-            <p class="about__text">
-              Olá, meu nome é Adriano e sou desenvolvedor
-              <u class="about__spotlight">Front-End</u>, manjo de
-              <strong>HTML</strong>, <strong>CSS</strong>,<strong>JS</strong>, e
-              <strong>React</strong>, também tenho experiência com
-              <strong>Angular +2</strong>, <strong>SASS</strong>,
-              <strong>Bootstrap</strong>, com o uso
-              <strong>Metodologia Ágil (Scrum)</strong> e plataformas de
-              versionamento de código : <strong>GitHub</strong>,
-              <strong>BitBucket</strong> e <strong>GitLab</strong>.
-            </p>
-            <p class="about__text">
-              Entre 2020 e 2021 fiz parte da
-              <a
-                href="https://www.facebook.com/388131481831991/photos/a.388493111795828/666560603989076/?type=3"
-                target="_blank"
-              >
-                <u class="about__spotlight">segunda turma noturna</u></a
-              >
-              da
-              <a href="https://www.labenu.com.br/" target="_blank">
-                <u class="about__spotlight">Labenu</u></a
-              >, um bootcamp de mais de <strong>500 horas</strong>(divididas em
-              6 meses), unindo teoria e prática voltadas para a área de
-              Desenvolvimento
-              <u class="about__spotlight">Front-end</u>
-            </p>
-            <p class="about__text">
-              Atualmente sou desenvolvedor Front-end na
-              <a
-                href="https://www.linkedin.com/company/enacomgroup/mycompany/"
-                target="_blank"
-                ><u class="about__spotlight">Enacom</u></a
-              >
-              e faço parte do time de tradução e revisão na
-              <a href="https://www.web3dev.com.br/devaraujo" target="_blank"
-                ><u class="about__spotlight">web3dev</u></a
-              >
-              (uma <strong>comunidade aberta</strong> para profissionais de
-              tecnologia que desejam aprender e trabalhar com
-              <strong>web3</strong> ).
-            </p>
-            <a
-              href="./assets/curriculo/curriculo.pdf"
-              download="Araujo_dev"
-              class="button"
-              >Currículo</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Habilidades</h2>
-
-        <div class="skills__container bd-grid">
-          <div class="skills__blocks">
-            <p class="skills__text">
-              Seguem algumas hard skills que domino e tenho utilizado. Para
-              saber mais sobre o que venho estudando, você pode
-              <a href="https://github.com/dev-araujo" target="_blank"
-                ><u class="skills__spotlight">descobrir aqui</u></a
-              >
-            </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML5</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS3</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-bootstrap skills__icon"></i>
-                <span class="skills__name">BOOTSTRAP</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-typescript skills__icon"></i>
-                <span class="skills__name">TYPESCRIPT</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-react skills__icon"></i>
-                <span class="skills__name">REACT</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-angular skills__icon"></i>
-                <span class="skills__name">ANGULAR +2</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img src="assets/images/work3.jpg" alt="" class="skills__img" />
-          </div>
-        </div>
-      </section>
-
-      <!--===== WORK =====-->
-      <section class="section" id="work">
-        <h2 class="section-title">Projetos</h2>
-        <div class="section work-text">
-          Alguns projetos podem ser conferidos abaixo
-        </div>
-
-        <div class="work__container bd-grid">
-          <!-- PROJECTS HERE, SEE MAIN.JS -->
-        </div>
-        <div class="work">
-          <a
-            href="https://github.com/dev-araujo/Index"
-            target="_blank"
-            class="button"
-            >Ver Mais</a
-          >
-        </div>
-      </section>
-
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contato</h2>
-
-        <div class="contact__container bd-grid">
-          <form
-            action="https://getform.io/f/8cf51d2b-07e5-49a8-b721-58d0422893c0"
-            method="POST"
-            class="contact__form"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              class="contact__input"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              class="contact__input"
-              required
-            />
-            <textarea
-              type="text"
-              name="message"
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-              required
-            ></textarea>
-            <button class="contact__button button" type="submit">Enviar</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Adriano P. de Araujo</p>
-      <div class="footer__social" id="contact">
-        <a
-          href="https://www.linkedin.com/in/araujocode/"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://www.hackerrank.com/araujo6_6"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bx-terminal"></i
-        ></a>
-        <a
-          href="https://github.com/dev-araujo"
-          target="_blank"
-          class="footer__icon"
-          ><i class="bx bxl-github"></i
-        ></a>
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav__logo">Adriano</a>
+        <span id="iconTheme" onclick="changeTheme()">
+          <i class="bx bx-sun"></i>
+        </span>
       </div>
-    </footer>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Habilidades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contato</a>
+          </li>
+        </ul>
+      </div>
 
-    <!--===== MAIN JS =====-->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Olá,<br />Sou <span class="home__title-color">Adriano</span><br />
+          Dev. <u class="home__underline-color">Front-end</u>
+        </h1>
+
+        <a href="#contact" id="button-contact" class="button">Contato</a>
+      </div>
+
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/araujocode/" target="_blank" class="home__social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://www.hackerrank.com/araujo6_6" target="_blank" class="home__social-icon"><i
+            class="bx bx-terminal"></i></a>
+        <a href="https://github.com/dev-araujo" target="_blank" class="home__social-icon"><i
+            class="bx bxl-github"></i></a>
+      </div>
+
+      <div class="home__img">
+        <img class="home__img--border" src="assets/images/perfil.png" alt="foto de perfil" />
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">Sobre</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="assets/images/about2.png" alt="" />
+        </div>
+
+        <div>
+          <h2 class="about__subtitle">Meu nome é Adriano</h2>
+          <p class="about__text">
+            Olá, meu nome é Adriano e sou desenvolvedor
+            <strong class="about__spotlight">Front-End</strong>, manjo de
+            <strong>HTML</strong>, <strong>CSS</strong>,<strong>JS</strong>, e
+            <strong>React</strong>, também tenho experiência com
+            <strong>Angular +2</strong>, <strong>Sass</strong>,
+            <strong>Bootstrap</strong>, com o uso
+            <strong>Metodologia Ágil (Scrum)</strong> e plataformas de
+            versionamento de código : <strong>GitHub</strong>,
+            <strong>BitBucket</strong> e <strong>GitLab</strong>.
+          </p>
+          <p class="about__text">
+            Entre 2020 e 2021 fiz parte da
+            <a href="https://www.facebook.com/388131481831991/photos/a.388493111795828/666560603989076/?type=3"
+              target="_blank">
+              <u style="text-decoration-thickness: 2px;" class="about__spotlight">segunda turma noturna</u></a>
+            da
+            <a href="https://www.labenu.com.br/" target="_blank">
+              <u style="text-decoration-thickness: 2px;" class="about__spotlight">Labenu</u></a>, um bootcamp de mais
+            de
+            <strong>500 horas</strong>(divididas em
+            6 meses), unindo teoria e prática voltadas para a área de
+            Desenvolvimento
+            <strong class="about__spotlight">Front-end</strong>.
+          </p>
+          <p class="about__text">
+            Atualmente sou desenvolvedor Front-end na
+            <a href="https://www.linkedin.com/company/enacomgroup/mycompany/" target="_blank"><u
+                style="text-decoration-thickness: 2px;" class="about__spotlight">Enacom</u></a>
+            e faço parte do time de tradução e revisão na
+            <a href="https://www.web3dev.com.br/devaraujo" target="_blank"><u style="text-decoration-thickness: 2px;"
+                class="about__spotlight">web3dev</u></a>
+            (uma <strong>comunidade aberta</strong> para profissionais de
+            tecnologia que desejam aprender e trabalhar com
+            <strong>web3</strong> ).
+          </p>
+          <a href="./assets/curriculo/curriculo.pdf" download="Araujo_dev" class="button">Currículo</a>
+        </div>
+      </div>
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Habilidades</h2>
+
+      <div class="skills__container bd-grid">
+        <div class="skills__blocks">
+          <p class="skills__text">
+            Seguem algumas hard skills que domino e tenho utilizado. Para
+            saber mais sobre o que venho estudando, você pode
+            <a href="https://github.com/dev-araujo" target="_blank"><u style="text-decoration-thickness: 2px;"
+                class="skills__spotlight">descobrir aqui</u></a>
+          </p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-sass skills__icon'></i>
+              <span class="skills__name">Sass</span>
+            </div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-bootstrap skills__icon"></i>
+              <span class="skills__name">BOOTSTRAP</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-typescript skills__icon"></i>
+              <span class="skills__name">TYPESCRIPT</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-react skills__icon"></i>
+              <span class="skills__name">REACT</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxl-angular skills__icon"></i>
+              <span class="skills__name">ANGULAR +2</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/images/work3.jpg" alt="" class="skills__img" />
+        </div>
+      </div>
+    </section>
+
+    <!--===== WORK =====-->
+    <section class="section" id="work">
+      <h2 class="section-title">Projetos</h2>
+      <div class="section work-text">
+        Alguns projetos podem ser conferidos abaixo
+      </div>
+
+      <div class="work__container bd-grid">
+
+        <div class="card shadow-sm work__img" style="width: 18rem;border:none;height:408px">
+          <img
+            src="https://user-images.githubusercontent.com/97068163/158913647-1c240427-68c3-4bb7-99ed-d00da7bd014c.png"
+            class="card-img-top work__img" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Restaurante</h5>
+            <div class="d-flex">
+              <p class="me-1">ReactJS</p>
+              <p>React-icons</p>
+            </div>
+            <footer class="d-flex">
+              <a href="#" class="card-link">Código</a>
+              <a href="#" class="card-link"> Resultado</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card shadow-sm  work__img" style="width: 18rem;border:none;height:408px">
+          <img
+            src="https://user-images.githubusercontent.com/97068163/154776838-cd4790ed-88be-4a8e-95b2-40d5df0ef63d.png"
+            class="card-img-top  work__img" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Pokedex-RxJS</h5>
+            <div class="d-flex w-100 flex-wrap ">
+              <span class="me-1">ReactJS</span>
+              <span class="me-1">TypeScript</span>
+              <span class="me-1">RxJS</span>
+              <span class="me-1">Material-Ui</span>
+              <span class="me-1">React-router</span>
+              <span class="me-1">Observable-hooks</span>
+              <span class="me-1">SASS</span>
+
+            </div>
+            <footer class="d-flex">
+              <a href="#" class="card-link">Código</a>
+              <a href="#" class="card-link"> Resultado</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="card shadow-sm  work__img" style="width: 18rem;border:none;height:408px">
+          <img
+            src="https://user-images.githubusercontent.com/97068163/156898220-b505cfd1-e44f-4e12-ac64-4ff2d38ac998.png"
+            class="card-img-top  work__img" alt="...">
+          <div class="card-body d-flex flex-column justify-content-between">
+            <h5 class="card-title">Tarot</h5>
+
+            <div class="d-flex w-100 flex-wrap ">
+              <span class="me-1">Angular</span>
+              <span class="me-1">Bootstrap</span>
+              <span class="me-1">Sass</span>
+
+
+            </div>
+            <footer class="d-flex">
+              <a href="#" class="card-link">Código</a>
+              <a href="#" class="card-link"> Resultado</a>
+            </footer>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="work">
+        <a href="https://github.com/dev-araujo/Index" target="_blank" class="button">Ver Mais</a>
+      </div>
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contato</h2>
+
+      <div class="contact__container bd-grid">
+        <form action="https://getform.io/f/8cf51d2b-07e5-49a8-b721-58d0422893c0" method="POST" class="contact__form">
+          <input type="text" name="name" placeholder="Name" class="contact__input" required />
+          <input type="email" name="email" placeholder="Email" class="contact__input" required />
+          <textarea type="text" name="message" id="" cols="0" rows="10" class="contact__input" required></textarea>
+          <button class="contact__button button" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Adriano P. de Araujo</p>
+    <div class="footer__social" id="contact">
+      <a href="https://www.linkedin.com/in/araujocode/" target="_blank" class="footer__icon"><i
+          class="bx bxl-linkedin"></i></a>
+      <a href="https://www.hackerrank.com/araujo6_6" target="_blank" class="footer__icon"><i
+          class="bx bx-terminal"></i></a>
+      <a href="https://github.com/dev-araujo" target="_blank" class="footer__icon"><i class="bx bxl-github"></i></a>
+    </div>
+  </footer>
+
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+
+  <script src="assets/js/main.js"></script>
+
+  <!-- =====BOOTSTRAP===== -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
