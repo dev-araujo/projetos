@@ -330,24 +330,24 @@ img {
 
 .work__container {
   height: 60rem;
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 .work-text {
   text-align: center;
   margin-top: -50px;
 }
-.work__img {
+.work__card {
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 
   overflow: hidden;
   height: 240px;
 }
-.work__img img {
+.work__card img {
   transition: 1s;
   cursor: pointer;
 }
 
-.work__img img:hover {
+.work__card:hover {
   transform: scale(1.1);
 }
 
@@ -526,5 +526,9 @@ strong {
   }
   .work {
     margin-top: 24rem;
+  }
+
+  .work__card--resp {
+    margin-left: 1.5rem;
   }
 }
