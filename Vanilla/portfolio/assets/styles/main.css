@@ -345,7 +345,7 @@ img {
   color: var(--second-color);
   font-weight: 600;
   border-radius: 4px;
-  background: rgba(255, 255, 0, 0.692);
+  background: rgba(255, 255, 0, 0.438);
   padding: 1rem;
 }
 .work__card {
