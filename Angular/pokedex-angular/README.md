@@ -7,6 +7,7 @@
 #### Este projeto é uma "pokedex" com a listagem dos 150 pokemons(paginados),campo de busca e visualização de seus detalhes.
 
 - O resultado pode ser conferido :arrow_right: [**AQUI**](https://pokedex.dev-araujo.repl.co/)
+
 <h1 align="center">
 
   <img src='https://user-images.githubusercontent.com/97068163/151001628-9465160c-01e8-4a34-88b0-8a5000156a1f.png' width="50%"/> <img src='https://user-images.githubusercontent.com/97068163/151001615-7af9bac3-fe1c-4e73-9a87-a4277007d0cd.png' width="50%"/>
