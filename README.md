@@ -14,9 +14,8 @@
  - [**Jogo da Velha**](https://github.com/dev-araujo/jogo-da-velha)
  - [**Restaurant landing-page**](https://github.com/dev-araujo/projetos/tree/main/React/restaurant)
  - [**Pokedex com RxJS**](https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs)
- - [**Chuck jokes app**](https://github.com/dev-araujo/projetos/tree/main/React/chuck-jokes) 
-
-
+ - [**Chuck jokes app**](https://github.com/dev-araujo/chuck-joke)
+   
 </details>
 
 
