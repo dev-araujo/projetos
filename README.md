@@ -12,7 +12,7 @@
 **<details><summary>Projetos React ⚛️</summary>**
 
  - [**Jogo da Velha**](https://github.com/dev-araujo/jogo-da-velha)
- - [**Restaurant landing-page**](https://github.com/dev-araujo/projetos/tree/main/React/restaurant)
+ - [**Restaurant landing-page**](https://github.com/dev-araujo/restaurant)
  - [**Pokedex com RxJS**](https://github.com/dev-araujo/pokedex-react--rxjs)
  - [**Chuck jokes app**](https://github.com/dev-araujo/chuck-joke)
    
