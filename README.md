@@ -21,7 +21,7 @@
 
 **<details><summary>Projetos Angular 🅰️ </summary>**
   
-  - [**Pokedex**](https://github.com/dev-araujo/projetos/tree/main/Angular/pokedex-angular)
+  - [**Pokedex**](https://github.com/dev-araujo/pokedex-angular)
   
   </details>
 
