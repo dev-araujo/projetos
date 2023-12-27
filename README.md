@@ -15,9 +15,7 @@
  - [**Restaurant landing-page**](https://github.com/dev-araujo/projetos/tree/main/React/restaurant)
  - [**Pokedex com RxJS**](https://github.com/dev-araujo/projetos/tree/main/React/pokedex-react--rxjs)
  - [**Chuck jokes app**](https://github.com/dev-araujo/projetos/tree/main/React/chuck-jokes) 
- - [**Astromach app**](https://github.com/dev-araujo/projetos/tree/main/React/astromach)
-  
- 
+
 
 </details>
 
