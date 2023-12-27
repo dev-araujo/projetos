@@ -1,35 +1,33 @@
-
-# Projetos 
+# Projetos
 
 <img src="https://img.shields.io/github/languages/count/dev-araujo/projetos?style=flat-square"/> <img src="https://img.shields.io/github/last-commit/dev-araujo/projetos?style=flat-square"/> <img alt="commits/mês" src="https://img.shields.io/github/commit-activity/m/dev-araujo/projetos?style=flat-square"/> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **<details><summary>Projetos Vanilla🍦</summary>**
-  
- - [**Portfólio**](https://github.com/dev-araujo/projetos/tree/main/Vanilla/portfolio) 
+
+- [**Portfólio**](https://github.com/dev-araujo/portfolio-vanilla)
 
 </details>
 
 **<details><summary>Projetos React ⚛️</summary>**
 
- - [**Jogo da Velha**](https://github.com/dev-araujo/jogo-da-velha)
- - [**Restaurant landing-page**](https://github.com/dev-araujo/restaurant)
- - [**Pokedex com RxJS**](https://github.com/dev-araujo/pokedex-react--rxjs)
- - [**Chuck jokes app**](https://github.com/dev-araujo/chuck-joke)
-   
+- [**Jogo da Velha**](https://github.com/dev-araujo/jogo-da-velha)
+- [**Restaurant landing-page**](https://github.com/dev-araujo/restaurant)
+- [**Pokedex com RxJS**](https://github.com/dev-araujo/pokedex-react--rxjs)
+- [**Chuck jokes app**](https://github.com/dev-araujo/chuck-joke)
+
 </details>
 
-
 **<details><summary>Projetos Angular 🅰️ </summary>**
-  
-  - [**Pokedex**](https://github.com/dev-araujo/pokedex-angular)
-  
+
+- [**Pokedex**](https://github.com/dev-araujo/pokedex-angular)
+
   </details>
 
 ---
-  
+
 O intuito desse repositório é reunir em um só lugar meus pequenos **projetos**.
 
-Para ver alguns dos meus desafios e testes técnicos clique [**aqui**](https://github.com/dev-araujo/desafios) 
+Para ver alguns dos meus desafios e testes técnicos clique [**aqui**](https://github.com/dev-araujo/desafios)
 
 _**Nota** :Cada projeto possui um arquivo **README.md** explicando o mesmo ._
 
