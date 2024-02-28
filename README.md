@@ -25,10 +25,9 @@
 
 ---
 
-O intuito desse repositório é reunir em um só lugar meus pequenos **projetos**.
 
-Para ver alguns dos meus desafios e testes técnicos clique [**aqui**](https://github.com/dev-araujo/desafios)
+#### Author 👷
 
-_**Nota** :Cada projeto possui um arquivo **README.md** explicando o mesmo ._
+<img src="https://user-images.githubusercontent.com/97068163/149033991-781bf8b6-4beb-445a-913c-f05a76a28bfc.png" width="5%" alt="caricatura do autor desse repositório"/>
 
- <img src="https://camo.githubusercontent.com/d21f7e6fe56adedf4e2f87221010e240dcd88521a8f283116b9ece7d4790f8a4/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f34382f32662f66332f34383266663337633433333837623736646531313631656462346430343937372e676966" width=35%/>
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/araujocode/)
